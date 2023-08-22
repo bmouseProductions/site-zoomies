@@ -194,6 +194,7 @@ export const naturais = [
             Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia \
             a dia, unindo bem-estar e lazer, fazendo com que ele se sinta verdadeiramente feliz e saudável.',
         composicao: 'Recortes desidratados de bovinos. No mix pode conter recortes de traqueia, esôfago e vergalho. Este produto não substitui um alimento completo. Uso proibido na alimentação de ruminantes. Distribuir conforme indicação de uso, como forma de premiação, distração e brincadeira.',
+        linha: 'naturais',
     },
 ]
 
