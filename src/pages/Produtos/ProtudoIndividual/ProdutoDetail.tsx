@@ -1,5 +1,6 @@
-
-
+import CardProduto from "../../../assets/components/CardProdutos/CardProduto";
+import SliderProdutos from "../../../assets/components/Sliders/SliderProdutos";
+import { AllProducts } from "../../../compartilhado/Produtos";
 
 interface Produto {
     nome: string;
@@ -16,6 +17,31 @@ interface ProductDetailProps {
     produto: Produto;
 }
 
+/*SLIDE BIFINHOS*/
+const slideBifinhos = [
+    ...AllProducts.filter(produto => produto.linha === 'bifinhos').map( (produto) => (
+        <CardProduto 
+            link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+            image= {produto.imagem} 
+            name= {produto.nome}
+            styleExtra='mx-5 mt-10'
+        />
+    ))
+];
+const slideCountBifinhos= slideBifinhos.length;
+
+/*SLIDE BIFINHOS*/
+const slideNaturais = [
+    ...AllProducts.filter(produto => produto.linha === 'naturais').map( (produto) => (
+        <CardProduto 
+            link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+            image= {produto.imagem} 
+            name= {produto.nome}
+            styleExtra='mx-5 mt-10'
+        />
+    ))
+];
+const slideCountNaturais= slideNaturais.length;
 
 export default function ProdutoDetail({ produto }: ProductDetailProps){
 
@@ -63,9 +89,26 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                             </div>
                         )}
                     </div>
-                    
                 </div>
+            </section>
+
+            <section>
                 
+                {produto.linha === 'bifinhos' ?  (
+                    <div className='flex gap-5 mb-10'>
+                        <SliderProdutos 
+                            slideContent={slideBifinhos}
+                            slideCount={slideCountBifinhos}
+                        />
+                    </div>
+                ) : (
+                    <div className='flex gap-5 mb-10'>
+                        <SliderProdutos 
+                            slideContent={slideNaturais}
+                            slideCount={slideCountNaturais}
+                        />
+                    </div>
+                )}
             </section>
         </>
     )
