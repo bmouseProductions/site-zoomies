@@ -9,9 +9,7 @@
   box-sizing: border-box;
 }
 
-html{
-  background-color: #04083a;
-}
+
 
 .headerSticky{
   position: fixed;

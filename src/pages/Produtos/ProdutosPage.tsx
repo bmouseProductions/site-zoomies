@@ -18,7 +18,7 @@ const defaultOptions = {
 
 export default function ProdutosPage(){
     return (
-        <section className="w-full px-5 py-14 sm:px-14 xl:px-20 ">
+        <section className="w-full px-5 py-14 sm:px-14 xl:px-20 bg-home">
             <div className='mb-14 '>
                 <h1 className='text-center text-6xl text-gradient font-bold'>
                     Produtos

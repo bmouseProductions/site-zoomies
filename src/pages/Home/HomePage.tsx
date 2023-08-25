@@ -1,24 +1,25 @@
 
-import zoomiesDesk from '../../assets/images/banners/zoomiesDesk.webp'
+/*import zoomiesDesk from '../../assets/images/banners/zoomiesDesk.webp'
 import zoomiesMobile from '../../assets/images/banners/zoomiesMobile.webp'
 import bifinhoDesk from '../../assets/images/banners/bifinhoDesk.webp'
 import bifinhoMobile from '../../assets/images/banners/bifinhoMobile.webp'
 import naturaisDesk from '../../assets/images/banners/naturaisDesk.webp'
-import naturaisMobile from '../../assets/images/banners/naturaisMobile.webp'
+import naturaisMobile from '../../assets/images/banners/naturaisMobile.webp' */
 
-import SliderBanner from '../../assets/components/Sliders/SliderBanner'
+//import SliderBanner from '../../assets/components/Sliders/SliderBanner'
+
 import SliderProdutos from '../../assets/components/Sliders/SliderProdutos'
 import CardProduto from '../../assets/components/CardProdutos/CardProduto'
 
 
 import { AllProducts } from '../../compartilhado/Produtos'
 import SliderVideos from '../../assets/components/Sliders/SliderVideos'
-// import { diversos } from '../../compartilhado/Produtos'
 
+import banner from '../../assets/images/revendedores.webp'
 
 export default function HomePage(){
 
-    /*SLIDER BANNER*/
+    /*SLIDER BANNER
     const slideContentDesk = [
         <img src={zoomiesDesk} alt="" />,
         <img src={bifinhoDesk} alt="" />,
@@ -32,7 +33,7 @@ export default function HomePage(){
         <img src={naturaisMobile} alt="" />
     ];
     const slideCountMobile = slideContentMobile.length;
-
+    */
 
     /*SLIDE PRODUTOS*/
     const slideProdutos = [
@@ -62,23 +63,23 @@ export default function HomePage(){
 
     const slideCountVideos= slideVideos.length;
     
+    
+
     return (
         <>
-            <section>
-                <div>
-                    <div className='hidden sm:block'>
-                        <SliderBanner 
-                            slideContent={slideContentDesk}
-                            slideCount={slideCountDesk}
-                        />
+        <section >
+            <section className='pt-[105px] md:pt-[104px] bg-[#f5a518] '>
+                <div className=' w-full flex justify-center items-center'>
+                    <div className='max-w-[500px]'>
+                        <h1 className='text-7xl font-bold text-white'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nisi repellendus omnis labore, mollitia e
+                        </h1>
                     </div>
 
-                    <div className='sm:hidden'>
-                        <SliderBanner 
-                            slideContent={slideContentMobile}
-                            slideCount={slideCountMobile}
-                        />
+                    <div className='max-w-3xl '>
+                        <img src={banner} alt="" />
                     </div>
+                    
                 </div>
             </section>
 
@@ -99,6 +100,25 @@ export default function HomePage(){
                     />
                 </div>
             </section>
+        </section>
         </>
     )
 }
+
+/*
+                <div>
+                    <div className='hidden sm:block'>
+                        <SliderBanner 
+                            slideContent={slideContentDesk}
+                            slideCount={slideCountDesk}
+                        />
+                    </div>
+
+                    <div className='sm:hidden'>
+                        <SliderBanner 
+                            slideContent={slideContentMobile}
+                            slideCount={slideCountMobile}
+                        />
+                    </div>
+                </div>
+*/              

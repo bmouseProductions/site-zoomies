@@ -25,7 +25,7 @@ export default function App() {
         
         <Header />
 
-        <main className='pt-[105px] md:pt-[104px]'>
+        <main className=''>
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/sobre" element={<Sobre />}/>
