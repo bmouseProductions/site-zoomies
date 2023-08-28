@@ -69,10 +69,10 @@ export default function HomePage(){
         <>
         <section >
             <section className='pt-[105px] md:pt-[104px] bg-[#f5a518] '>
-                <div className=' w-full flex justify-center items-center'>
-                    <div className='max-w-[500px]'>
-                        <h1 className='text-7xl font-bold text-white'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nisi repellendus omnis labore, mollitia e
+                <div className=' w-full flex flex-col justify-center items-center'>
+                    <div className='max-w-[500px] px-5'>
+                        <h1 className='text-5xl lg:text-7xl font-bold text-white'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         </h1>
                     </div>
 
@@ -83,7 +83,12 @@ export default function HomePage(){
                 </div>
             </section>
 
-            <section>
+            <section className='container'>
+                <div className='pt-14 px-3  flex justify-center '>
+                    <h1 className='text-[45px] lg:text-6xl font-bold text-center'>
+                        Conheça nossos produtos
+                    </h1>
+                </div>
                 <div className='flex gap-5'>
                     <SliderProdutos 
                         slideContent={slideProdutos}
