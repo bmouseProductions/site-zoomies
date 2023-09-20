@@ -26,9 +26,9 @@ export default function Header(){
         };
     }, [isSticky]);
     return (
-        <header className="fixed top-0 left-0 right-0 z-50  text-black backdrop-blur-md menuNavigation">
-          <div className="w-full container mx-auto min-h-[104px] px-5 py-5 flex items-center justify-between">
-            <Link to="/" id='logoImg' className='md:ml-[120px]'>
+        <header className="fixed bottom-0 lg:top-0 left-0 right-0 z-50  text-black backdrop-blur-md menuNavigation">
+          <div className="w-full container mx-auto lg:min-h-[104px] p-0 lg:px-5 lg:py-5 flex items-center justify-between">
+            <Link to="/" id='logoImg' className='hidden lg:block lg:ml-[120px]'>
               <img src={logo} className="max-w-[200px] h-[50px] md:max-w-xs " alt="" />
             </Link>
             
@@ -38,10 +38,11 @@ export default function Header(){
               <NavLink  to="/produtos" className='text-2xl font-bold hover:text-[#808080] transition-all' >Produtos</NavLink >
             </nav>
 
-            <nav className="h-full md:hidden right-0">
-              <MenuMobile />
-            </nav>
+            
           </div>
+          <nav className="w-full px-2 lg:px-5 py-5  block md:hidden text-white bg-[#0000009d] ">
+            <MenuMobile />
+          </nav>
         </header>
     )
 }

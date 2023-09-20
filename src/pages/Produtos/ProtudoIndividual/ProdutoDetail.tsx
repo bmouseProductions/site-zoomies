@@ -49,7 +49,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
     
     return (
         <>
-            <section className="w-full px-5 md:px-[5%] lg:px-40 text-white">
+            <section className="w-full px-5 md:px-[5%] lg:px-40 text-black">
                 <div className="w-full flex flex-col ">
                     <h1 className="my-10 text-xl font-semibold"> Produtos / {produto.nome} </h1>
                     <div className="flex flex-col lg:flex-row justify-center">
