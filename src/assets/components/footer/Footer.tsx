@@ -11,7 +11,7 @@ import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-sv
 
 export default function Footer(){
     return (
-        <footer className="w-full px-5  bg-[#04083a]">
+        <footer className="w-full px-5  bg-[#f5a518]">
             <div  className='w-full max-w-[1300px] mx-auto py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-5 '>
                 <a href='https://www.biosea.com.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoBiosea} className='w-[250px] min-h-[70px]  ' alt="" />

@@ -1,7 +1,11 @@
 import { Tilt } from 'react-tilt'
 
 import { AllProducts } from "../../compartilhado/Produtos"
-import CardProduto from '../../assets/components/CardProdutos/CardProduto'
+import CardProduto from '../../assets/components/cardProdutos/CardProduto'
+import Banner from '../../assets/components/banner/Banner'
+
+import banner from '../../assets/images/revendedores.webp'
+import Fornecedores from '../../assets/components/fornecedores/Fornecedores'
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
@@ -18,26 +22,38 @@ const defaultOptions = {
 
 export default function ProdutosPage(){
     return (
-        <section className="w-full px-5 py-14 sm:px-14 xl:px-20 bg-home">
-            <div className='mb-14 '>
-                <h1 className='text-center text-6xl text-gradient font-bold'>
-                    Produtos
-                </h1>
-            </div>
-            
-            <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-14 lg:gap-20'>
-                {AllProducts.map( (produto, index) => (
-                    <Tilt options={defaultOptions} key={index}>
-                        <CardProduto 
-                            link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
-                            image= {produto.imagem} 
-                            name= {produto.nome} 
-                        />
-                    </Tilt >
-                ))}
+        <>
+            <section>
+                <Banner
+                    imagem={banner}
+                    title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
+                    text=''
+                />
+            </section>
+
+            <section className="w-full px-5 py-14 sm:px-14 xl:px-20 bg-home">
+                <div className='mb-14 '>
+                    <h1 className='text-center text-6xl text-gradient font-bold'>
+                        Produtos
+                    </h1>
+                </div>
                 
-            </div>
-            
-        </section>
+                <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-14 lg:gap-20'>
+                    {AllProducts.map( (produto, index) => (
+                        <Tilt options={defaultOptions} key={index}>
+                            <CardProduto 
+                                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
+                                image= {produto.imagem} 
+                                name= {produto.nome} 
+                            />
+                        </Tilt >
+                    ))}
+                    
+                </div>
+                
+            </section>
+
+            <Fornecedores />
+        </>
     )
 }

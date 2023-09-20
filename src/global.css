@@ -44,3 +44,7 @@
 .menuNavigation a.active {
   color: #808080;
 }
+
+#slider-produtos .slick-track{
+  padding: 20px 0px !important;
+}

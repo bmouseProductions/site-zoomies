@@ -1,5 +1,5 @@
-import CardProduto from "../../../assets/components/CardProdutos/CardProduto";
-import SliderProdutos from "../../../assets/components/Sliders/SliderProdutos";
+import CardProduto from "../../../assets/components/cardProdutos/CardProduto";
+import SliderProdutos from "../../../assets/components/sliders/SliderProdutos";
 import { AllProducts } from "../../../compartilhado/Produtos";
 
 interface Produto {
