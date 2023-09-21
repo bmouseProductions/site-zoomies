@@ -13,10 +13,16 @@
 
 .headerSticky{
   position: fixed;
-  top: 0;
+  bottom: 0;
   color: #fff;
-  background-color:#0000009d;
   backdrop-filter: blur(4px);
+}
+
+@media screen and (min-width:768px){
+  .headerSticky{
+    top: 0;
+    background-color: #0000009d;
+  }
 }
 
 .banners .slick-prev, .banners .slick-next{
@@ -43,4 +49,8 @@
 
 .menuNavigation a.active {
   color: #808080;
+}
+
+#slider-produtos .slick-track{
+  padding: 20px 0px !important;
 }

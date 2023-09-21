@@ -38,7 +38,7 @@ export default function SliderVideos({slideContent}: SliderProps) {
       };
 
   return (
-        <Slider {...settings} className="w-full m-auto mt-20 md:mt-[200px]">
+        <Slider {...settings} className="w-full m-auto mt-20">
             {slideContent.map((slide, index) => (
                 <div key={index} className="w-full flex justify-center mb-3">
                     {slide}

@@ -1,21 +1,16 @@
-
-/*import zoomiesDesk from '../../assets/images/banners/zoomiesDesk.webp'
-import zoomiesMobile from '../../assets/images/banners/zoomiesMobile.webp'
-import bifinhoDesk from '../../assets/images/banners/bifinhoDesk.webp'
-import bifinhoMobile from '../../assets/images/banners/bifinhoMobile.webp'
-import naturaisDesk from '../../assets/images/banners/naturaisDesk.webp'
-import naturaisMobile from '../../assets/images/banners/naturaisMobile.webp' */
-
-//import SliderBanner from '../../assets/components/Sliders/SliderBanner'
-
-import SliderProdutos from '../../assets/components/Sliders/SliderProdutos'
-import CardProduto from '../../assets/components/CardProdutos/CardProduto'
-
+import { Link } from 'react-router-dom';
 
 import { AllProducts } from '../../compartilhado/Produtos'
-import SliderVideos from '../../assets/components/Sliders/SliderVideos'
+
+import SliderProdutos from '../../assets/components/sliders/SliderProdutos'
+import CardProduto from '../../assets/components/cardProdutos/CardProduto'
+import SliderVideos from '../../assets/components/sliders/SliderVideos'
+import Banner from '../../assets/components/banner/Banner';
+import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 
 import banner from '../../assets/images/revendedores.webp'
+
+
 
 export default function HomePage(){
 
@@ -63,41 +58,37 @@ export default function HomePage(){
 
     const slideCountVideos= slideVideos.length;
     
-    
-
     return (
         <>
-        <section >
-            <section className='pt-[105px] md:pt-[104px] bg-[#f5a518] '>
-                <div className=' w-full flex flex-col justify-center items-center'>
-                    <div className='max-w-[500px] px-5'>
-                        <h1 className='text-5xl lg:text-7xl font-bold text-white'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        </h1>
-                    </div>
 
-                    <div className='max-w-3xl '>
-                        <img src={banner} alt="" />
-                    </div>
-                    
-                </div>
+            <section>
+                <Banner
+                    imagem={banner}
+                    title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
+                    text=''
+                />
             </section>
 
-            <section className='container'>
+            <section className='container mx-auto'>
                 <div className='pt-14 px-3  flex justify-center '>
                     <h1 className='text-[45px] lg:text-6xl font-bold text-center'>
                         Conheça nossos produtos
                     </h1>
                 </div>
-                <div className='flex gap-5'>
+                <div className='flex gap-5' id='slider-produtos'>
                     <SliderProdutos 
                         slideContent={slideProdutos}
                         slideCount={slideCountProdutos}
                     />
                 </div>
+                <div className='mt-12 flex justify-center '>
+                    <Link to="/produtos" id='logoImg' className='w-auto underline text-2xl text-black'>
+                        Veja todos os produtos
+                    </Link>
+                </div>  
             </section>
 
-            <section className='w-full  mb-20 px-5'>
+            <section className='container mx-auto mb-20 px-5'>
                 <div className='w-full 2xl:max-w-[1800px] flex mx-auto'>
                     <SliderVideos
                         slideContent={slideVideos}
@@ -105,7 +96,8 @@ export default function HomePage(){
                     />
                 </div>
             </section>
-        </section>
+
+            <Fornecedores />
         </>
     )
 }
