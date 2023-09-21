@@ -71,7 +71,7 @@ export default function HomePage(){
 
             <section className='container mx-auto'>
                 <div className='pt-14 px-3  flex justify-center '>
-                    <h1 className='text-[45px] lg:text-6xl font-bold text-center'>
+                    <h1 className='text-[44px] lg:text-6xl font-bold text-center'>
                         Conheça nossos produtos
                     </h1>
                 </div>
