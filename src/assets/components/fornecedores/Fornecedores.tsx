@@ -13,7 +13,7 @@ export default function Fornecedores(){
                 <h1 className='text-[45px] font-bold text-center'>
                     Onde encontrar os produtos Zoomies?  
                 </h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
                     <div className='py-8 px-4 w-[300px] flex flex-col items-center rounded bg-white'>
                         <img src={mercado} className='max-w-[180px] h-[50px]' alt="" />
                         <a href="" target="_blank" className='py-2 px-5 mt-7 md:mt-10 font-semibold bg-[#dd211a] hover:bg-[#04083A] transition rounded'>
