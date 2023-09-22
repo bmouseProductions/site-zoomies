@@ -32,7 +32,7 @@ export const description = [
 
 export const bifinhos = [
     {
-        nome: 'Bifinho Sabor Churrasco',
+        nome: 'Bifinho Churrasco',
         imagem: bifinhoChurrasco,
         descricao: 'Transformamos o aroma inconfundível do churrasco em um \
             formato perfeito para compartilhar com seu melhor amigo peludo. \
@@ -47,28 +47,28 @@ export const bifinhos = [
     },
     
     {
-        nome: 'Bifinho Sabor Carne para filhotes',
+        nome: 'Bifinho Carne para filhotes',
         imagem: bifinhoCarne,
         descricao: 'Desenvolvemos uma linha de bifinhos super especial para os \
             filhotinhos de 4 patas, com nutrientes específicos para que \
             cresçam de forma saudável. Cuidadosamente, escolhemos os \
             sabores “carne” e “peito de peru”, para criar uma experiência \
             deliciosa e nutritiva para os filhotes.',
-        composicao: 'Pulmão suíno, carne mecanicamente separada de aves, carne de bovino, proteína texturizada de soja*, glicerina purificada, sal refinado, aroma artificial de carne defumada, carbonato de cálcio, hidrolisado de fígado de suíno, propilgalato, antioxidantes (BHT e BHA), sorbato de potássio, goma xantana, ácido fosfórico,  ácido cítrico, ácido sórbico, tripolifosfato de sódio, dióxido de silício,  ácido propiônico, amônia, aroma cítrico, benzoato de sódio, ácido tartárico e corante caramelo IV.',
+        composicao: 'Pulmão suíno, carne mecanicamente separada de aves, carne de bovino, proteína texturizada de soja, glicerina purificada, sal refinado, aroma artificial de carne defumada, carbonato de cálcio, hidrolisado de fígado de suíno, propilgalato, antioxidantes (BHT e BHA), sorbato de potássio, goma xantana, ácido fosfórico,  ácido cítrico, ácido sórbico, tripolifosfato de sódio, dióxido de silício,  ácido propiônico, amônia, aroma cítrico, benzoato de sódio, ácido tartárico e corante caramelo IV.',
         doadores: ' Agrobacterium tumefaciens, Bacillus thuringiensis e Streptomyces viridochromogenes. Eventuais Substitutos: Pulmão bovino e aroma idêntico ao natural de carne.',
         garantias: 'Umidade (máx.) 250 g/kg (25%), proteína bruta (mín.) 300 g/kg (30%), extrato etéreo (mín.) 70 g/kg (7%), matéria fibrosa (máx.) 20 g/kg (2%), matéria mineral (máx.) 100 g/kg (10%), cálcio (máx.) 40 g/kg (4%), cálcio (mín.) 3000 mg/kg (0,3%), fósforo (mín.) 4000 mg/kg (0,4%).',
         linha: 'bifinhos',
     },
 
     {
-        nome: 'Bifinho Sabor Peito de Peru para filhotes',
+        nome: 'Bifinho Peito de Peru para filhotes',
         imagem: bifinhoPeru,
         descricao: 'Desenvolvemos uma linha de bifinhos super especial para os \
             filhotinhos de 4 patas, com nutrientes específicos para que \
             cresçam de forma saudável. Cuidadosamente, escolhemos os \
             sabores “carne” e “peito de peru”, para criar uma experiência \
             deliciosa e nutritiva para os filhotes.',
-        composicao: 'Pulmão suíno, carne mecanicamente separada de aves, carne de bovino, proteína texturizada de soja*, glicerina purificada, sal refinado, aroma natural de peito de peru, carbonato de cálcio, hidrolisado de fígado de suíno, propilgalato, antioxidantes (BHT e BHA), sorbato de potássio, goma xantana, ácido fosfórico,  ácido cítrico, ácido sórbico, tripolifosfato de sódio, dióxido de silício,  ácido propiônico, amônia, aroma cítrico, benzoato de sódio e ácido tartárico.',
+        composicao: 'Pulmão suíno, carne mecanicamente separada de aves, carne de bovino, proteína texturizada de soja, glicerina purificada, sal refinado, aroma natural de peito de peru, carbonato de cálcio, hidrolisado de fígado de suíno, propilgalato, antioxidantes (BHT e BHA), sorbato de potássio, goma xantana, ácido fosfórico,  ácido cítrico, ácido sórbico, tripolifosfato de sódio, dióxido de silício,  ácido propiônico, amônia, aroma cítrico, benzoato de sódio e ácido tartárico.',
         doadores: 'Agrobacterium tumefaciens, Bacillus thuringiensis e Streptomyces viridochromogenes.',
         substitutos: 'Pulmão bovino e sorbato de potássio.',
         garantias: 'Umidade (máx.) 250 g/kg (25%), proteína bruta (mín.) 350 g/kg (35%), extrato etéreo (mín.) 70 g/kg (7%), matéria fibrosa (máx.) 20 g/kg (2%), matéria mineral (máx.) 100 g/kg (10%), cálcio (máx.) 40 g/kg (4%), cálcio (mín.) 3000 mg/kg (0,3%), fósforo (mín.) 4000 mg/kg (0,4%).',
@@ -92,9 +92,9 @@ export const bifinhos = [
     },
 
     {
-        nome: 'Bifinho Sabor Galinha Caipira',
+        nome: 'Bifinho Galinha Caipira',
         imagem: bifinhoGalinha,
-        descricao: 'este sabor, tentamos capturar a essência da culinária familiar, \
+        descricao: 'Com este sabor, tentamos capturar a essência da culinária familiar, \
             aquela que nos lembra os dias de infância quando a vovó \
             cozinhava os seus melhores pratos. Seja em uma reconfortante \
             canja em dias frios ou em um frango ensopado tão delicioso, \
@@ -112,10 +112,7 @@ export const naturais = [
     {
         nome: 'Steak de Frango',
         imagem: steakFrango,
-        descricao: 'O estresse pode causar diversos problemas de saúde nos cães, por isso criamos uma \
-            linha de produtos especiais que ajudam os animais a controlar a sua ansiedade e irritação. \
-            Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia \
-            a dia, unindo bem-estar e lazer, fazendo com que ele se sinta verdadeiramente feliz e saudável.',
+        descricao: 'Steaks de Frango Zoomies podem ser oferecidos aos cães de todos os portes como uma recompensa em treinamentos, ao se mostrar obediente e como um mimo. Este alimento pode ser oferecido a todas as idades e portes de cães, quando oferecido para cães de porte pequeno ou filhotes, recomenda-se fracionar o steak.',
         composicao: 'Carne de aves, glicerina, água, cloreto de sódio e sorbato de potássio.',
         linha: 'naturais',
     },

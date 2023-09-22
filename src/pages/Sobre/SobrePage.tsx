@@ -35,7 +35,7 @@ export default function SobrePage(){
                 />
             </section>
 
-            <section className='container mx-auto py-16'>
+            <section className='container mx-auto px-5 md:px-[5%] py-16'>
                 <h1 className='max-w-[600px] mx-auto text-[45px] lg:text-6xl font-bold text-center'>
                     Nós alimentamos o melhor em cães de todas as idades e todas as raças.
                 </h1>
@@ -48,7 +48,7 @@ export default function SobrePage(){
                 </p>
             </section>
 
-            <section className='container mx-auto'>
+            <section className='container mx-auto px-5 md:px-[5%]'>
                 <div className='flex gap-5' id='slider-produtos'>
                     <SliderProdutos 
                         slideContent={slideProdutos}

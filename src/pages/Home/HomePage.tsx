@@ -37,7 +37,7 @@ export default function HomePage(){
                 link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
-                styleExtra='mx-5 mt-10'
+                styleExtra='mx-3 mt-10 '
             />
         ))
     ];
@@ -45,15 +45,15 @@ export default function HomePage(){
 
     /*SLIDE VIDEOS*/
     const slideVideos = [
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] md:w-[80%] sm:h-[400px] lg:w-[400px] lg:h-[230px] 2xl:w-[400px] m-auto ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
     ]
 
     const slideCountVideos= slideVideos.length;
@@ -65,12 +65,13 @@ export default function HomePage(){
                 <Banner
                     imagem={banner}
                     title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
-                    text=''
+                    text='texto de chamada para nossos produtos de extrema qualidade que dá umm pau em todos os outros concorrentes'
+                    botao='Conheça nossos produtos'
                 />
             </section>
 
-            <section className='container mx-auto'>
-                <div className='pt-14 px-3  flex justify-center '>
+            <section className='container mx-auto px-5 md:px-[5%]'>
+                <div className='pt-14 flex justify-center '>
                     <h1 className='text-[44px] lg:text-6xl font-bold text-center'>
                         Conheça nossos produtos
                     </h1>
@@ -88,8 +89,8 @@ export default function HomePage(){
                 </div>  
             </section>
 
-            <section className='container mx-auto mb-20 px-5'>
-                <div className='w-full 2xl:max-w-[1800px] flex mx-auto'>
+            <section className='container mx-auto px-5 md:px-[5%] mb-20'>
+                <div className='w-full flex mx-auto'>
                     <SliderVideos
                         slideContent={slideVideos}
                         slideCount={slideCountVideos}

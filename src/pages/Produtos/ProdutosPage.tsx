@@ -31,14 +31,14 @@ export default function ProdutosPage(){
                 />
             </section>
 
-            <section className="w-full px-5 py-14 sm:px-14 xl:px-20 bg-home">
-                <div className='mb-14 '>
+            <section className="container mx-auto px-5 md:px-[5%]  text-blackbg-home">
+                <div className='my-14 '>
                     <h1 className='text-center text-6xl text-gradient font-bold'>
                         Produtos
                     </h1>
                 </div>
                 
-                <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-14 lg:gap-20'>
+                <div className='w-full mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-12 md:gap-14 '>
                     {AllProducts.map( (produto, index) => (
                         <Tilt options={defaultOptions} key={index}>
                             <CardProduto 

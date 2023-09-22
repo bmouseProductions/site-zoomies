@@ -11,29 +11,29 @@ import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-sv
 
 export default function Footer(){
     return (
-        <footer className="w-full px-5  bg-[#f5a518]">
-            <div  className='w-full max-w-[1300px] mx-auto py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-5 '>
-                <a href='https://www.biosea.com.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+        <footer className="w-full bg-[#f5a518]">
+            <div  className='container mx-auto px-5 md:px-[5%] py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-5 '>
+                <a href='https://www.biosea.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoBiosea} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
                 
-                <a href='https://www.farol.ind.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer'>
+                <a href='https://www.farol.ind.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer'>
                     <img src={logoFarol} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
 
-                <a href='https://originalisbiotech.com.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                <a href='https://originalisbiotech.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoOriginalis} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
 
-                <a href='https://patense.com.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                <a href='https://patense.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoPatense} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
 
-                <a href='https://petsmellon.com.br/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                <a href='https://petsmellon.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoPetsmellon} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
 
-                <a href='https://lojazoomies.com/' className='w-full xl:max-w-[400px] min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                <a href='https://lojazoomies.com/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                     <img src={logoZoomies} className='  ' alt="" />
                 </a>
                 

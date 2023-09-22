@@ -14,21 +14,28 @@ export default function SliderComponent({slideContent}: SliderProps) {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1536,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
+                  slidesToShow: 3,
+                  slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 640,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1
@@ -38,7 +45,7 @@ export default function SliderComponent({slideContent}: SliderProps) {
       };
 
   return (
-        <Slider {...settings} className="w-full m-auto !max-w-[1300px] ">
+        <Slider {...settings} className="w-full m-auto ">
             {slideContent.map((slide, index) => (
                 <div key={index} >
                     {slide}

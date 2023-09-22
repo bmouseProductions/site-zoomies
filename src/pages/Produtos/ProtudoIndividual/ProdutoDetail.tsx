@@ -2,6 +2,8 @@ import CardProduto from "../../../assets/components/cardProdutos/CardProduto";
 import SliderProdutos from "../../../assets/components/sliders/SliderProdutos";
 import { AllProducts } from "../../../compartilhado/Produtos";
 
+import logo from '../../../assets/images/logoZoomies.webp'
+
 interface Produto {
     nome: string;
     imagem: string;
@@ -49,7 +51,8 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
     
     return (
         <>
-            <section className="w-full px-5 md:px-[5%] lg:px-40 text-black">
+            <section className="container md:pt-[100px] px-5 md:px-[5%] lg:px-40 text-black">
+                <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
                 <div className="w-full flex flex-col ">
                     <h1 className="my-10 text-xl font-semibold"> Produtos / {produto.nome} </h1>
                     <div className="flex flex-col lg:flex-row justify-center">
@@ -92,7 +95,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                 </div>
             </section>
 
-            <section>
+            <section className="container md:pt-[100px] px-5 md:px-[5%] lg:px-40 text-black">
                 
                 {produto.linha === 'bifinhos' ?  (
                     <div className='flex gap-5 mb-10'>
