@@ -32,6 +32,7 @@ export default function SobrePage(){
                     imagem={banner}
                     title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
                     text='É certo cuidar de um amigo que faz parte da sua família há muito tempo. Eles nos tornam pessoas melhores e, por isso, merecem um alimento de qualidade e um lar com muito amor.'
+                    botao='exe'
                 />
             </section>
 

@@ -28,6 +28,7 @@ export default function ProdutosPage(){
                     imagem={banner}
                     title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
                     text=''
+                    botao='uxu'
                 />
             </section>
 

@@ -89,6 +89,21 @@ export default function HomePage(){
                 </div>  
             </section>
 
+            <section className='container mx-auto px-5 md:px-[5%] py-10'>
+                <div>
+                    <img src="" alt="" />
+                </div>
+
+                <div>
+                    <h1>
+                        Por que escolher a Zoomies?
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat voluptatibus ullam, optio facere itaque dignissimos numquam laudantium. Nisi libero excepturi magni deserunt? Iure, culpa?
+                    </p>
+                </div>
+            </section>
+
             <section className='container mx-auto px-5 md:px-[5%] mb-20'>
                 <div className='w-full flex mx-auto'>
                     <SliderVideos
