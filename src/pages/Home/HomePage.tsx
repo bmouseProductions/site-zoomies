@@ -109,7 +109,7 @@ export default function HomePage(){
                 <div className='lg:w-1/2 flex flex-col gap-10'>
                     <div>
                         <h2 className='text-5xl font-semibold'>
-                            Por que escolher a Zoomies?
+                            Ultimo produto lançado
                         </h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat voluptatibus u voluptatibus ullam, optio facere itaque dignissimos numquam laudantium. Nisi libero excepturi magni deserunt? Iure, culpa?
