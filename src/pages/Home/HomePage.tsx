@@ -152,7 +152,11 @@ export default function HomePage(){
                 </div>
             </section>
 
-            <section className='container mx-auto px-5 md:px-[5%] mb-20'>
+            <section className='container mx-auto px-5 md:px-[5%] pt-14 mb-14 flex flex-col gap-10'>
+                <div className=''>
+                    <h2 className='text-4xl lg:text-5xl font-semibold mb-5'>Nosso curso de adestramento</h2>
+                    <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque aut dolor quia. Voluptatum eum iste ab? Corrupti dolor molestias est illo dolorum neque possimus, mollitia optio iste sit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam repellendus atque mollitia qui placeat aliquam totam praesentium earum quaerat reiciendis officiis dignissimos alias facilis non quo, ducimus, sed blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates eius, aliquam reiciendis ipsam quam soluta, eum consequatur vitae praesentium culpa, alias dolorem laboriosam reprehenderit ea officiis vel? Repellendus, consequuntur?</p>
+                </div>
                 <div className='w-full flex mx-auto'>
                     <SliderVideos
                         slideContent={slideVideos}
