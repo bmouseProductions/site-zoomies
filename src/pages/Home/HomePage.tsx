@@ -9,6 +9,7 @@ import Banner from '../../assets/components/banner/Banner';
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 
 import banner from '../../assets/images/revendedores.webp'
+import ilustracao from '../../assets/images/pets.webp'
 
 
 
@@ -89,19 +90,62 @@ export default function HomePage(){
                 </div>  
             </section>
 
-            <section className='container mx-auto px-5 md:px-[5%] py-10'>
-                <div>
-                    <img src="" alt="" />
+            <section className='container mx-auto px-5 md:px-[5%] py-14 flex flex-col gap-10 lg:flex-row lg:justify-between'>
+                <div className='lg:w-1/2 flex flex-col gap-10'>
+                    <div>
+                        <h2 className='text-5xl font-semibold'>
+                            Por que escolher a Zoomies?
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat voluptatibus u voluptatibus ullam, optio facere itaque dignissimos numquam laudantium. Nisi libero excepturi magni deserunt? Iure, culpa?
+                        </p>
+                    </div>
+
+                    <div className='flex justify-center'>
+                        <img className='xl:w-[400px] ' src={ilustracao} alt="" />
+                    </div>
                 </div>
 
-                <div>
-                    <h1>
-                        Por que escolher a Zoomies?
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat voluptatibus ullam, optio facere itaque dignissimos numquam laudantium. Nisi libero excepturi magni deserunt? Iure, culpa?
-                    </p>
+                <div className='lg:w-1/2 flex flex-col gap-10'>
+                    <div>
+                        <h2 className='text-5xl font-semibold'>
+                            Por que escolher a Zoomies?
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui officiis quis, autem ratione fugiat voluptatibus u voluptatibus ullam, optio facere itaque dignissimos numquam laudantium. Nisi libero excepturi magni deserunt? Iure, culpa?
+                        </p>
+                    </div>
+
+                    <div className='flex justify-center'>
+                        <img className='xl:w-[400px] ' src={ilustracao} alt="" />
+                    </div>
                 </div>
+            </section>
+
+            <section className='container mx-auto px-5 md:px-[5%] flex gap-10 flex-col lg:flex-row'>
+                <div className='lg:w-2/3 flex flex-col gap-7'>
+                    <h2 className='text-5xl font-semibold'>Linha de Naturais</h2>
+                    <p>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
+                    <Link to="/produtos" className='w-auto underline text-xl text-white font-semibold'>
+                        <button className='bg-[#04083a] py-3 px-10 rounded-2xl hover:bg-red-600 transition-all'>
+                            Ver todos os produtos
+                        </button>
+                    </Link>
+                </div>
+                <img className='lg:w-[400px]' src={ilustracao} alt="" />
+            </section>
+
+            <section className='container mx-auto px-5 md:px-[5%] mt-10 flex gap-10 flex-col lg:flex-row-reverse'>
+                <div className='lg:w-2/3 flex flex-col items-end gap-7'>
+                    <h2 className='text-5xl font-semibold'>Linha de Naturais</h2>
+                    <p>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
+                    <Link to="/produtos" className='w-auto underline text-xl text-white font-semibold'>
+                        <button className='bg-[#04083a] py-3 px-10 rounded-2xl hover:bg-red-600 transition-all'>
+                            Ver todos os produtos
+                        </button>
+                    </Link>
+                </div>
+                <img className='lg:w-[400px]' src={ilustracao} alt="" />
             </section>
 
             <section className='container mx-auto px-5 md:px-[5%] mb-20'>
