@@ -31,7 +31,7 @@ export default function Header(){
       <>
         <header className="hidden md:block fixed top-0 left-0 right-0 z-50 text-white backdrop-blur-md menuNavigation">
           <div className="w-full container mx-auto md:min-h-[100px] p-0 md:px-5 md:py-5 flex items-center justify-between">
-            <Link to="/" id='logoImg' className='hidden lg:block lg:ml-[120px]'>
+            <Link to="/" id='logoImg' className='hidden md:block md:mr-[20px] lg:ml-[120px]'>
               <img src={logo} className="max-w-[200px] h-[50px] md:max-w-xs " alt="" />
             </Link>
             

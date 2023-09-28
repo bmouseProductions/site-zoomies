@@ -3,6 +3,7 @@ import SliderProdutos from "../../../assets/components/sliders/SliderProdutos";
 import { AllProducts } from "../../../compartilhado/Produtos";
 
 import logo from '../../../assets/images/logoZoomies.webp'
+import { Link } from "react-router-dom";
 
 interface Produto {
     nome: string;
@@ -51,10 +52,16 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
     
     return (
         <>
-            <section className="container md:pt-[100px] px-5 md:px-[5%] lg:px-40 text-black">
+            <div className="h-[100px] bg-[#f5a518] hidden md:block">
+
+            </div>
+            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-black">
                 <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
                 <div className="w-full flex flex-col ">
-                    <h1 className="my-10 text-xl font-semibold"> Produtos / {produto.nome} </h1>
+                    <h1 className="my-10 text-xl font-semibold">
+                        <Link to='/produtos' className="my-10 text-xl font-semibold">Produtos</Link> / {produto.nome}
+                    </h1>
+
                     <div className="flex flex-col lg:flex-row justify-center">
                         <img className="w-full max-w-lg " src={produto.imagem} alt="" />
                         <div className="flex flex-col pt-10 gap-5">
@@ -95,7 +102,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                 </div>
             </section>
 
-            <section className="container md:pt-[100px] px-5 md:px-[5%] lg:px-40 text-black">
+            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-black">
                 
                 {produto.linha === 'bifinhos' ?  (
                     <div className='flex gap-5 mb-10'>

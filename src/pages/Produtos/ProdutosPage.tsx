@@ -32,7 +32,7 @@ export default function ProdutosPage(){
                 />
             </section>
 
-            <section className="container mx-auto px-5 md:px-[5%]  text-blackbg-home">
+            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-blackbg-home">
                 <div className='my-14 '>
                     <h1 className='text-center text-6xl text-gradient font-bold'>
                         Produtos

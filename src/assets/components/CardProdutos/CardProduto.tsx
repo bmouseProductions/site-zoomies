@@ -10,12 +10,12 @@ interface CardProps {
 
 
 export default function CardProduto( {link, image, name, styleExtra}:CardProps ){
-    const style = "p-5 my-7 h-full bg-[#fff] backdrop-blur-md rounded-xl shadow-xl "
+    const style = "p-5 my-7 h-full hover:bg-[#00000020] backdrop-blur-md rounded-xl shadow-xl "
     return (
         <div className={style + styleExtra}>
             <Link to={link}>
                 <img src={image} alt="" />
-                <h1 className='my-2 text-2xl font-bold text-center text-[#e70000] min-h-[72px] '>{name}</h1>
+                <h1 className='my-2 text-2xl font-bold text-center text-[#e70000]  min-h-[72px] '>{name}</h1>
             </Link>
         </div>
     )
