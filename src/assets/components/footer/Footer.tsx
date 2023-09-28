@@ -1,9 +1,7 @@
 import logoFarol from '../../images/logosPatense/logo-dark.svg'
 import logoPatense from '../../images/logosPatense/patense.svg'
 import logoZoomies from '../../images/logosPatense/Logo-Zoomies-Pet-Care-horizontal-scaled.webp'
-import logoOriginalis from '../../images/logosPatense/originalis.svg'
 import logoPetsmellon from '../../images/logosPatense/petsmellon.svg'
-import logoBiosea from '../../images/logosPatense/biosea.svg'
 import grupoPatense from '../../images/logosPatense/grupoPatense.webp'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,17 +15,10 @@ export default function Footer(){
                 <img src={grupoPatense} className='w-full max-w-[400px] mx-auto pt-20 ' alt="" />
             </div>
             
-            <div  className='container mx-auto px-5 md:px-[5%] py-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-5 '>
-                <a href='https://www.biosea.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
-                    <img src={logoBiosea} className='w-[250px] min-h-[70px]  ' alt="" />
-                </a>
+            <div  className='container mx-auto px-5 md:px-[5%] py-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-items-center gap-5 '>
                 
                 <a href='https://www.farol.ind.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer'>
                     <img src={logoFarol} className='w-[250px] min-h-[70px]  ' alt="" />
-                </a>
-
-                <a href='https://originalisbiotech.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
-                    <img src={logoOriginalis} className='w-[250px] min-h-[70px]  ' alt="" />
                 </a>
 
                 <a href='https://patense.com.br/' className='w-full min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>

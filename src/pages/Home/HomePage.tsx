@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 import { AllProducts } from '../../compartilhado/Produtos'
 
@@ -10,6 +9,7 @@ import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 
 import banner from '../../assets/images/revendedores.webp'
 import ilustracao from '../../assets/images/pets.webp'
+import Botao from '../../assets/components/button/Index';
 
 
 
@@ -46,15 +46,10 @@ export default function HomePage(){
 
     /*SLIDE VIDEOS*/
     const slideVideos = [
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />,
-        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] ' src="https://www.youtube.com/embed/AmhNjQfgakY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] rounded ' src="https://www.youtube.com/embed/YbCEtHMdhbU?si=01T31s44gt5AAMBu" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] rounded ' src="https://www.youtube.com/embed/zMUiskeQ1sI?si=gbefInTQ6ktGPqBA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] rounded ' src="https://www.youtube.com/embed/gBBg5i6AQs0?si=AHKZ10wx7BqKaPSP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+        <iframe className='w-[100%] h-[200px] sm:h-[400px]  lg:h-[230px]  px-[10px] rounded ' src="https://www.youtube.com/embed/hh_PySplqNk?si=35wptomvgEYdG9HB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>, 
     ]
 
     const slideCountVideos= slideVideos.length;
@@ -62,7 +57,7 @@ export default function HomePage(){
     return (
         <>
 
-            <section>
+            <section className=''>
                 <Banner
                     imagem={banner}
                     title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
@@ -71,7 +66,7 @@ export default function HomePage(){
                 />
             </section>
 
-            <section className='container mx-auto px-5 md:px-[5%]'>
+            <section className='container mx-auto px-5 md:px-[8%]    2xl:px-[5%]'>
                 <div className='pt-14 flex justify-center '>
                     <h1 className='text-[44px] lg:text-6xl font-bold text-center'>
                         Conheça nossos produtos
@@ -84,9 +79,10 @@ export default function HomePage(){
                     />
                 </div>
                 <div className='mt-12 flex justify-center '>
-                    <Link to="/produtos" id='logoImg' className='w-auto underline text-2xl text-black'>
-                        Veja todos os produtos
-                    </Link>
+                    <Botao 
+                        children="Veja todos o produtos"
+                        page='/produtos'
+                    />
                 </div>  
             </section>
 
@@ -127,11 +123,10 @@ export default function HomePage(){
                     <div className='lg:w-2/3 flex flex-col gap-7'>
                         <h2 className='text-4xl lg:text-5xl font-semibold text-white'>Linha de Naturais</h2>
                         <p className='text-[#1E1E1E] text-lg'>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
-                        <Link to="/produtos" className='w-auto underline flex justify-center lg:justify-start text-xl text-white font-semibold'>
-                            <button className='bg-[#04083a] py-3 px-10 rounded-2xl hover:bg-red-600 transition-all'>
-                                Ver todos os produtos
-                            </button>
-                        </Link>
+                        <Botao 
+                            children="Veja todos o produtos"
+                            page='/produtos'
+                        />
                     </div>
                     <img className='lg:w-[400px]' src={ilustracao} alt="" />
                 </div>
@@ -142,11 +137,10 @@ export default function HomePage(){
                     <div className='lg:w-2/3 flex flex-col lg:items-end gap-7'>
                         <h2 className='text-4xl lg:text-5xl font-semibold text-white'>Linha de Naturais</h2>
                         <p className='text-[#1E1E1E] text-lg'>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
-                        <Link to="/produtos" className='w-auto underline flex justify-center text-xl text-white font-semibold'>
-                            <button className='bg-[#04083a] py-3 px-10 rounded-2xl hover:bg-red-600 transition-all'>
-                                Ver todos os produtos
-                            </button>
-                        </Link>
+                        <Botao 
+                            children="Veja todos o produtos"
+                            page='/produtos'
+                        />
                     </div>
                     <img className='lg:w-[400px]' src={ilustracao} alt="" />
                 </div>
@@ -154,9 +148,7 @@ export default function HomePage(){
 
             <section className='container mx-auto px-5 md:px-[5%] pt-14 mb-14 flex flex-col gap-10'>
                 <div className=''>
-                    <h2 className='text-4xl lg:text-5xl font-semibold mb-5'>Nosso curso de adestramento</h2>
-                    <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque aut dolor quia. Voluptatum eum iste ab? Corrupti dolor molestias est illo dolorum neque possimus, mollitia optio iste sit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam repellendus atque mollitia qui placeat aliquam totam praesentium earum quaerat reiciendis officiis dignissimos alias facilis non quo, ducimus, sed blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates eius, aliquam reiciendis ipsam quam soluta, eum consequatur vitae praesentium culpa, alias dolorem laboriosam reprehenderit ea officiis vel? Repellendus, consequuntur?</p>
-                </div>
+                    <h2 className='text-4xl lg:text-5xl text-center font-semibold mb-5'>Nosso curso de adestramento</h2></div>
                 <div className='w-full flex mx-auto'>
                     <SliderVideos
                         slideContent={slideVideos}

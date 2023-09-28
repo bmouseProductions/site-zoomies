@@ -1,16 +1,18 @@
 import { ReactElement } from "react"
+import { Link } from "react-router-dom";
 
 
 interface botaoProps{
-    children: ReactElement | string
+    children: ReactElement | string;
+    page: string;
 }
 
-export default function Botao( {children}:botaoProps){
+export default function Botao( {children, page}:botaoProps){
     return (
-        <a href="#form" className="w-full md:max-w-[22.8rem]"> 
-            <button className="w-full  py-5 rounded font-bold text-black text-[26px] bg-[#fff] shadow-[0px_0px_20px_#ff7e00] hover:bg-[#ff7e00] hover:text-white hover:shadow-[0px_0px_20px_#000] transition-all duration-200">
+        <Link to={page} id='logoImg' className='w-auto '>
+            <button className='bg-[#04083a] py-3 px-10 rounded-2xl hover:bg-red-600 transition-all text-white font-semibold'>
                 {children}
             </button>
-        </a>
+        </Link>
     )
 }

@@ -11,11 +11,11 @@ interface propsBanner {
 
 export default function Banner( {imagem, title, text, botao}:propsBanner ){
     return (
-        <div className=' md:pt-[104px] bg-[#f5a518] '>
+        <div className='lg:px-[8%] lg:pb-10 xl:pb-0 md:pt-[104px] bg-[#f5a518] '>
             <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
             <div className=' w-full flex flex-col lg:flex-row justify-center items-center'>
                 <div className='max-w-[500px] px-5'>
-                    <h1 className='text-5xl lg:text-7xl font-bold text-white '>
+                    <h1 className='text-5xl xl:text-7xl font-bold text-white '>
                         {title}
                     </h1>
                     <p className="text-xl text-[#1E1E1E] mt-7">
