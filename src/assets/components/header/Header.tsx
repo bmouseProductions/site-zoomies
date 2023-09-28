@@ -39,6 +39,7 @@ export default function Header(){
               <NavLink  to="/" className='text-2xl font-bold hover:text-[#808080] transition-all' >Home</NavLink >
               <NavLink  to="/sobre" className='text-2xl font-bold hover:text-[#808080] transition-all' >Sobre</NavLink >
               <NavLink  to="/produtos" className='text-2xl font-bold hover:text-[#808080] transition-all' >Produtos</NavLink >
+              <NavLink  to="https://lojazoomies.com/zoom/" className='text-2xl font-bold hover:text-[#808080] transition-all' >Blog</NavLink >
             </nav>
           </div>
         </header>

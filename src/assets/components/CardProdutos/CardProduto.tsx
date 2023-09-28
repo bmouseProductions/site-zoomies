@@ -10,7 +10,7 @@ interface CardProps {
 
 
 export default function CardProduto( {link, image, name, styleExtra}:CardProps ){
-    const style = "p-5 my-5 h-full bg-[#b8b7b780] backdrop-blur-md rounded-xl shadow "
+    const style = "p-5 my-5 h-full bg-[#fff] backdrop-blur-md rounded-xl shadow-xl "
     return (
         <div className={style + styleExtra}>
             <Link to={link}>
