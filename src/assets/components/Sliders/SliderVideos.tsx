@@ -14,12 +14,12 @@ export default function SliderVideos({slideContent}: SliderProps) {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2000,
-        responsive: [
+        /*responsive: [
             {
                 breakpoint: 1439,
                 settings: {
@@ -34,11 +34,11 @@ export default function SliderVideos({slideContent}: SliderProps) {
                   slidesToScroll: 1
                 }
             },
-        ]
+        ]*/
       };
 
   return (
-        <Slider {...settings} className="w-full m-auto">
+        <Slider {...settings} className="w-full mx-auto flex justify-center xl:px-28">
             {slideContent.map((slide, index) => (
                 <div key={index} className="w-full flex justify-center mb-3">
                     {slide}

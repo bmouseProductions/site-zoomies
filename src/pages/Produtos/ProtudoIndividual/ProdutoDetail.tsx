@@ -52,21 +52,21 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
     
     return (
         <>
-            <div className="h-[100px] bg-[#f5a518] hidden md:block">
+            <div className="h-[100px] bg-[#04083a] hidden md:block">
 
             </div>
-            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-black">
+            <section className="max-w-[1276px] mx-auto px-5  text-black">
                 <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
                 <div className="w-full flex flex-col ">
-                    <h1 className="my-10 text-xl font-semibold">
-                        <Link to='/produtos' className="my-10 text-xl font-semibold">Produtos</Link> / {produto.nome}
+                    <h1 className="my-10 text-xl font-medium ">
+                        <Link to='/produtos' className="my-10 text-xl font-medium ">Produtos</Link> / {produto.nome}
                     </h1>
 
-                    <div className="flex flex-col lg:flex-row justify-center">
+                    <div className="flex flex-col lg:flex-row justify-center items-center">
                         <img className="w-full max-w-lg " src={produto.imagem} alt="" />
-                        <div className="flex flex-col pt-10 gap-5">
-                            <h1 className="text-3xl md:text-4xl mt-6 mb-2">{produto.nome}</h1>
-                            <p className="max-w-[500px] ">
+                        <div className="flex flex-col pt-10 ">
+                            <h1 className="text-3xl md:text-4xl md:mt-6 mb-2">{produto.nome}</h1>
+                            <p className=" ">
                                 {produto.descricao}
                             </p>
                         </div>
@@ -75,25 +75,25 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                     
                 </div>
                 <div className="mb-10 max-w-80% ">
-                    <h2 className="text-3xl md:text-4xl mt-6 mb-5">Descrição</h2>
+                    <h2 className="text-3xl md:text-4xl mt-6 mb-2">Descrição</h2>
                     <div className="flex flex-col gap-2">
                         <p>
-                            <strong className="text-lg font-bold">Composição: </strong>
+                            <strong className="text-lg font-medium ">Composição: </strong>
                             {produto.composicao}
                         </p>
 
                         {produto.linha === 'bifinhos' && (
                             <div className="flex flex-col gap-2">
                                 <p>
-                                    <strong className="text-lg font-bold">Ingredientes transgênicos / Espécies doadoras do gene: </strong>
+                                    <strong className="text-lg font-medium ">Ingredientes transgênicos / Espécies doadoras do gene: </strong>
                                     {produto.doadores}
                                 </p>
                                 <p>
-                                    <strong className="text-lg font-bold">Eventuais Subtitutos: </strong>
+                                    <strong className="text-lg font-medium ">Eventuais Subtitutos: </strong>
                                     {produto.substitutos}
                                 </p>
                                 <p>
-                                    <strong className="text-lg font-bold">Níveis de garantia: </strong>
+                                    <strong className="text-lg font-medium ">Níveis de garantia: </strong>
                                     {produto.garantias}
                                 </p>
                             </div>
@@ -102,7 +102,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                 </div>
             </section>
 
-            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-black">
+            <section className="max-w-[1276px] mx-auto px-5  text-black">
                 
                 {produto.linha === 'bifinhos' ?  (
                     <div className='flex gap-5 mb-10'>

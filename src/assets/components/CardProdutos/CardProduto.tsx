@@ -15,7 +15,7 @@ export default function CardProduto( {link, image, name, styleExtra}:CardProps )
         <div className={style + styleExtra}>
             <Link to={link}>
                 <img src={image} alt="" />
-                <h1 className='my-2 text-2xl font-bold text-center text-[#e70000]  min-h-[72px] '>{name}</h1>
+                <h1 className='my-2 text-2xl font-bold text-center text-[#04083a]  min-h-[72px] '>{name}</h1>
             </Link>
         </div>
     )

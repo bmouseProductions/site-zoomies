@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,12 +9,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .headerSticky{
   position: fixed;
   color: #fff;
-  background-color:#0000009d;
+  background-color:#04083ac1;
 }
 
 .banners .slick-prev, .banners .slick-next{
@@ -22,6 +25,13 @@
 .slick-dots{
   bottom: -40px;
 }
+
+@media screen {
+  #slick-videos .slick-dots{
+    bottom: -10px;
+  }
+}
+
 
 @media screen and (min-width: 760px){
   .slick-dots{
@@ -48,7 +58,7 @@
 }
 
 .menuNavigation a.active {
-  color: #808080;
+  color: #f5a518;
 }
 
 /*

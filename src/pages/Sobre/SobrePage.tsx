@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { AllProducts } from '../../compartilhado/Produtos';
 
 import Banner from '../../assets/components/banner/Banner';
@@ -8,6 +6,7 @@ import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import SliderProdutos from '../../assets/components/sliders/SliderProdutos';
 
 import banner from '../../assets/images/revendedores.webp'
+import Botao from '../../assets/components/button/Botao';
 
 
 export default function SobrePage(){
@@ -37,11 +36,11 @@ export default function SobrePage(){
             </section>
 
             <section className='container mx-auto px-5 md:px-[5%] 2xl:px-[7%] py-16'>
-                <h1 className='max-w-[600px] mx-auto text-[45px] lg:text-6xl font-bold text-center'>
+                <h1 className='max-w-[600px] mx-auto text-4xl lg:text-6xl font-semibold text-center'>
                     Nós alimentamos o melhor em cães de todas as idades e todas as raças.
                 </h1>
 
-                <p className='text-2xl max-w-[600px] mx-auto mt-[30px] text-center '>
+                <p className='text-xl md:text-2xl max-w-[600px] mx-auto mt-[30px] text-center '>
                     Nossos produtos - de petiscos a refeições completas e balanceadas - são nutritivos, de alta qualidade e muito saborosos.
                     <br />
                     <br />
@@ -57,9 +56,10 @@ export default function SobrePage(){
                     />
                 </div>
                 <div className='mt-10 mb-16 flex justify-center '>
-                    <Link to="/produtos" id='logoImg' className='w-auto underline text-2xl text-black'>
-                        Veja todos os produtos
-                    </Link>
+                    <Botao 
+                        children='Veja todos os produtos'
+                        page='/produtos'
+                    />
                 </div>  
             </section>
 

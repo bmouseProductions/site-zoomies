@@ -1,4 +1,6 @@
 import { Tilt } from 'react-tilt'
+import Lottie from 'react-lottie-player'
+import paw from '../../assets/images/paw.json'
 
 import { AllProducts } from "../../compartilhado/Produtos"
 import CardProduto from '../../assets/components/cardProdutos/CardProduto'
@@ -6,6 +8,7 @@ import Banner from '../../assets/components/banner/Banner'
 
 import banner from '../../assets/images/revendedores.webp'
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores'
+
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
@@ -32,9 +35,15 @@ export default function ProdutosPage(){
                 />
             </section>
 
-            <section className="container mx-auto px-5 md:px-[5%] 2xl:px-[7%]  text-blackbg-home">
+            <section className="max-w-[1276px] mx-auto px-5 mb-24 text-blackbg-home">
                 <div className='my-14 '>
-                    <h1 className='text-center text-6xl text-gradient font-bold'>
+                    <Lottie
+                        play
+                        loop
+                        animationData={paw}
+                        className='w-[50px] mx-auto'
+                    />
+                    <h1 className='text-center text-5xl xl:text-6xl text-black '>
                         Produtos
                     </h1>
                 </div>
