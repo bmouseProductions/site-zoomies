@@ -1,4 +1,6 @@
 import Lottie from 'react-lottie-player'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 import { AllProducts } from '../../compartilhado/Produtos'
 
@@ -10,10 +12,10 @@ import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import Botao from '../../assets/components/button/Botao';
 
 import banner from '../../assets/images/revendedores.webp'
-import ilustracao from '../../assets/images/pets.webp'
-import paw from '../../assets/images/paw.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+//import ilustracao from '../../assets/images/pets.webp'
+import paw from '../../assets/images/animations/paw.json'
+import naturais from '../../assets/images/naturais.webp'
+
 
 export default function HomePage(){
 
@@ -103,7 +105,7 @@ export default function HomePage(){
             <section className='max-w-[1276px] mx-auto px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row'>
                 <div className='lg:w-2/3 flex flex-col gap-5'>
                     <h1 className='text-3xl lg:text-5xl  text-black'>Linha de Bifinhos</h1>
-                    <p className='text-[#1E1E1E] text-lg'>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
+                    <p className='text-[#1E1E1E] text-lg'>Bifinhos são petiscos saborosos que beneficiam seu pet. Eles são ricos em proteína, fundamental para músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, prevenindo problemas bucais. Oferecem estímulo sensorial, enriquecendo o ambiente. São eficazes no treinamento, sendo ótimas recompensas. Também fortalecem o vínculo e promovem confiança entre você e seu animal de estimação.</p>
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
@@ -112,13 +114,13 @@ export default function HomePage(){
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] bg-[#f5a518] rounded' src={ilustracao} alt="" />
+                <img className='lg:w-[400px] bg-[#f5a518] p-3 rounded' src={naturais} alt="" />
             </section>
         
             <section className='max-w-[1276px] mx-auto px-5 pt-12 flex gap-10 flex-col lg:flex-row-reverse'>
                 <div className='lg:w-2/3 flex flex-col lg:items-end gap-5'>
                     <h1 className='text-3xl lg:text-5xl  text-black'>Linha de Naturais</h1>
-                    <p className='text-[#1E1E1E] text-lg'>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro exercitationem facilis et odit a ex in laudantium deserunt totam mollitia modi eaque corrupti repellendus repudiandae ipsa. Porro, harum eveniet! sit amet consectetur adipisicing elit. Quibusdam voluptas, dicta, maxime corrupti doloribus sint a, mollitia dolorem maiores eum error quo consequatur ad? Tempora tenetur iusto dolorum! Et, asperiores?</p>
+                    <p className='text-[#1E1E1E] text-lg'>O estresse pode causar diversos problemas de saúde nos cães, por isso criamos uma linha de produtos especiais que ajudam os animais a controlar a sua ansiedade e irritação. Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia a dia, unindo bem-estar e lazer, fazendo com que ele se sinta verdadeiramente feliz e saudável.</p>
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
@@ -127,7 +129,7 @@ export default function HomePage(){
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] bg-[#f5a518] rounded' src={ilustracao} alt="" />
+                <img className='lg:w-[400px] p-3 bg-[#f5a518] rounded' src={naturais} alt="" />
             </section>
             
 

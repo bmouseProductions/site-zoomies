@@ -52,9 +52,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
     
     return (
         <>
-            <div className="h-[100px] bg-[#04083a] hidden md:block">
-
-            </div>
+            <div className="h-[100px] bg-[#04083a] hidden md:block"></div>
             <section className="max-w-[1276px] mx-auto px-5  text-black">
                 <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
                 <div className="w-full flex flex-col ">

@@ -14,6 +14,7 @@ import Header from "./assets/components/header/Header";
 import Footer from "./assets/components/footer/Footer";
 
 import { AllProducts } from "./compartilhado/Produtos";
+import ScrollToTop from "./assets/components/scrollTop/Scroll";
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
   return (
     <Router>
       <>
-        
+        <ScrollToTop />
         <Header />
 
         <main className=''>
@@ -38,7 +39,7 @@ export default function App() {
                 element={<ProdutoDetail produto={produto} />}
               />
             ))}
-            <Route path="*" element={<ErrorPage />}/>
+            <Route path="/*" element={<ErrorPage />}/>
           </Routes>
         </main>
 

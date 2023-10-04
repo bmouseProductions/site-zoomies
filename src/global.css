@@ -61,6 +61,10 @@
   color: #f5a518;
 }
 
+.menhu a.active svg{
+  color: #f5a518;
+}
+
 /*
 .bg-wave{
   background-image: url(./assets/images/wave.svg);

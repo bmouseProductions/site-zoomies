@@ -59,6 +59,7 @@ export default function SobrePage(){
                     <Botao 
                         children='Veja todos os produtos'
                         page='/produtos'
+                        icon=''
                     />
                 </div>  
             </section>

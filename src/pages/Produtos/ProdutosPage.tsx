@@ -1,6 +1,6 @@
 import { Tilt } from 'react-tilt'
 import Lottie from 'react-lottie-player'
-import paw from '../../assets/images/paw.json'
+import paw from '../../assets/images/animations/paw.json'
 
 import { AllProducts } from "../../compartilhado/Produtos"
 import CardProduto from '../../assets/components/cardProdutos/CardProduto'

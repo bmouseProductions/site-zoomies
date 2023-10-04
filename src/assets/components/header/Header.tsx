@@ -45,7 +45,7 @@ export default function Header(){
         </header>
 
         <header className="md:hidden fixed bottom-0 left-0 right-0 z-50 menuNavigation">
-          <nav className=" md:hidden w-full py-5 px-2 flex justify-around text-black bg-[#fff] ">
+          <nav className=" md:hidden w-full py-5 px-2 flex justify-around text-black bg-[#fff] menhu">
 
             <NavLink  to="/" className="flex flex-col items-center" >
               <FontAwesomeIcon icon={faHome} className="text-black text-lg" />
@@ -59,8 +59,8 @@ export default function Header(){
               <FontAwesomeIcon icon={faPaw} className="text-black text-lg" />
               Produtos
             </NavLink >
-            <NavLink  to="/blog" className="flex flex-col items-center" >
-              <FontAwesomeIcon icon={faNewspaper} className="text-black text-lg" />
+            <NavLink  to="https://lojazoomies.com/zoom/" className="flex flex-col items-center" >
+              <FontAwesomeIcon icon={faNewspaper} className="text-black text-lg " />
               Blog
             </NavLink >
           </nav>

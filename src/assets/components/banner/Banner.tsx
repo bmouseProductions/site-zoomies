@@ -14,7 +14,10 @@ export default function Banner( {imagem, title, text, botao}:propsBanner ){
     return (
         <div className='relative '>
             <div className='lg:px-[8%] lg:pb-10 xl:pb-20 md:pt-[104px] bg-gradient-to-b lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-400 via-[0%] md:via-10% to-[#04083a] md:to-70%'>
-                <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
+                
+                <Link to='/'>
+                    <img src={logo} alt="" className='max-w-[400px] w-[80%] mx-auto py-10 md:hidden' />
+                </Link>
                 <div className='max-w-[1276px] w-full flex flex-col-reverse lg:flex-row justify-center items-center'>
                     <div className='max-w-[500px] px-5 mb-20'>
                         <h1 className='text-4xl xl:text-6xl font-bold text-white '>
@@ -31,7 +34,7 @@ export default function Banner( {imagem, title, text, botao}:propsBanner ){
                         </Link>
                     </div>
 
-                    <div className='max-w-3xl '>
+                    <div className='w-full max-w-3xl '>
                         <img src={imagem} alt="" />
                     </div>
                     
