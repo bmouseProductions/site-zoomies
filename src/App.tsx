@@ -8,13 +8,13 @@ import Produtos from './pages/Produtos/ProdutosPage';
 import ProdutoDetail from './pages/Produtos/ProtudoIndividual/ProdutoDetail';
 import ErrorPage from "./pages/Error/ErrorPage";
 
-
-
 import Header from "./assets/components/header/Header";
 import Footer from "./assets/components/footer/Footer";
+import ScrollToTop from "./assets/components/scrollTop/Scroll";
+import BackTop from "./assets/components/backTop/Index";
 
 import { AllProducts } from "./compartilhado/Produtos";
-import ScrollToTop from "./assets/components/scrollTop/Scroll";
+
 
 
 export default function App() {
@@ -41,6 +41,7 @@ export default function App() {
             ))}
             <Route path="/*" element={<ErrorPage />}/>
           </Routes>
+          <BackTop/>
         </main>
 
         <footer>

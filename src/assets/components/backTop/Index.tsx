@@ -26,9 +26,9 @@ export default function BackTop(){
       }, [isSticky]);
 
     return(
-      <div id='backTop' className='fixed right-3 bottom-5 z-50'>
-        <a href="#"  className='flex justify-center items-center rounded-full p-1 bg-[#ff7e00] border border-[#326ef5] shadow-[0px_0px_5px_#ffffff]'>
-          <FontAwesomeIcon icon={faArrowUp} />
+      <div id='backTop' className='fixed left-4 bottom-24 md:bottom-5 z-50'>
+        <a href="#"  className='flex justify-center items-center rounded-full py-[6px] px-2 bg-red-600 border border-[#f5a518] shadow-[0px_0px_5px_#f5a518]'>
+          <FontAwesomeIcon icon={faArrowUp} className='text-[20px] text-white' />
         </a>
       </div>
     )

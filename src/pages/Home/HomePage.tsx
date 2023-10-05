@@ -75,14 +75,14 @@ export default function HomePage(){
 
             <Fornecedores />
 
-            <section className='max-w-[1276px] mt-20 mx-auto px-5'>
+            <section className='max-w-[1276px] mx-auto px-5 mt-20 '>
                 <div className='pt-14 flex flex-col items-center justify-center '>
-                <Lottie
-                    play
-                    loop
-                    animationData={paw}
-                    className='w-[50px] mx-auto'
-                />
+                    <Lottie
+                        play
+                        loop
+                        animationData={paw}
+                        className='w-[50px] mx-auto'
+                    />
                     <h1 className='text-3xl lg:text-5xl  text-center'>
                         Conheça nossos produtos
                     </h1>
