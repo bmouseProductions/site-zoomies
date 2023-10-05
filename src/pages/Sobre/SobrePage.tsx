@@ -44,7 +44,7 @@ export default function SobrePage(){
                     Nossos produtos - de petiscos a refeições completas e balanceadas - são nutritivos, de alta qualidade e muito saborosos.
                     <br />
                     <br />
-                    E quando não estamos inventando petiscos ou brincando com nossos cães, estamos trabalhando para acabar com a triste situação de cães que vivem nas ruas. Porque todos os cães merecem um lar com muito amor.
+                    E quando não estamos inventando petiscos asasdou brincando com nossos cães, estamos trabalhando para acabar com a triste situação de cães que vivem nas ruas. Porque todos os cães merecem um lar com muito amor.
                 </p>
             </section>
 
