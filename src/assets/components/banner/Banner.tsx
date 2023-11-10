@@ -24,10 +24,10 @@ export default function Banner( {imagem, title, text, styleExtra}:propsBanner ){
                 </Link>
                 <div className='max-w-[1276px] w-full flex flex-col-reverse lg:flex-row justify-center items-center'>
                     <div className='max-w-[500px] px-5 mb-20'>
-                        <h1 className='text-4xl xl:text-6xl font-bold text-white '>
+                        <h1 className='text-4xl xl:text-6xl font-bold text-center lg:text-start text-white '>
                             {title}
                         </h1>
-                        <p className="text-lg text-[#d3d3d3] mt-7">
+                        <p className="text-lg text-[#d3d3d3] text-center lg:text-start mt-7">
                             {text}
                         </p>
 

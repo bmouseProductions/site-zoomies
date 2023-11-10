@@ -29,8 +29,8 @@ export default function ProdutosPage(){
             <section>
                 <Banner
                     imagem={banner}
-                    title='Conheça nossas linhas de produtos'
-                    text=''
+                    title='Os melhores produtos '
+                    text='Produtos de alta qualidade, em embalagens incríveis e, acima de tudo, muito saborosos para nossos pets.'
                     botao=''
                     styleExtra='mb-10'
                 />

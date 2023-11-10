@@ -33,10 +33,10 @@ export default function SobrePage(){
             <section>
                 <Banner
                     imagem={bannerImg}
-                    title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
-                    text='É certo cuidar de um amigo que faz parte da sua família há muito tempo. Eles nos tornam pessoas melhores e, por isso, merecem um alimento de qualidade e um lar com muito amor.'
+                    title='Conheça a Zoomies'
+                    text='A Zoomies é a mais nova marca do Grupo Patense, dedicada a oferecer petiscos saborosos e de alta qualidade para os nossos amigos pets.'
                     botao='exe'
-                    styleExtra='mb-5 flex justify-center h-[500px] sm:h-[650px] lg:h-auto '
+                    styleExtra='mb-5 mx-auto flex justify-center w-[280px] max-w-[400px] sm:max-w-none lg:h-[650px] lg:w-auto'
                 />
             </section>
 

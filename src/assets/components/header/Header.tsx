@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import { faHome, faNewspaper, faBuilding, faPaw } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faNewspaper, faBuilding, faPaw, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from '../../images/logoZoomies.webp'
@@ -35,10 +35,11 @@ export default function Header(){
               <img src={logo} className="max-w-[200px] h-[50px] md:max-w-xs " alt="" />
             </Link>
             
-            <nav className="w-full max-w-[700px]  md:flex justify-around">
+            <nav className="w-full max-w-[800px]  md:flex justify-around">
               <NavLink  to="/" className='text-2xl font-medium hover:text-[#808080] transition-all' >Home</NavLink >
               <NavLink  to="/sobre" className='text-2xl font-medium hover:text-[#808080] transition-all' >Sobre</NavLink >
               <NavLink  to="/produtos" className='text-2xl font-medium hover:text-[#808080] transition-all' >Produtos</NavLink >
+              <NavLink  to="https://lojazoomies.com/revendedor/" className='text-2xl font-medium hover:text-[#808080] transition-all' >Revendador</NavLink >
               <NavLink  to="https://lojazoomies.com/zoom/" className='text-2xl font-medium hover:text-[#808080] transition-all' >Blog</NavLink >
             </nav>
           </div>
@@ -58,6 +59,10 @@ export default function Header(){
             <NavLink  to="/produtos" className="flex flex-col items-center" >
               <FontAwesomeIcon icon={faPaw} className="text-black text-lg" />
               Produtos
+            </NavLink >
+            <NavLink  to="https://lojazoomies.com/revendedor/" className="flex flex-col items-center" >
+              <FontAwesomeIcon icon={faHandshake} className="text-black text-lg " />
+              Revendedor
             </NavLink >
             <NavLink  to="https://lojazoomies.com/zoom/" className="flex flex-col items-center" >
               <FontAwesomeIcon icon={faNewspaper} className="text-black text-lg " />

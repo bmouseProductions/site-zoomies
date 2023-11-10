@@ -17,8 +17,8 @@ export default function SliderComponent({slideContent}: SliderProps) {
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
-        //autoplay: true,
-        //autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 1300,
         responsive: [
             {
                 breakpoint: 1536,
