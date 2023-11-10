@@ -8,12 +8,16 @@ interface propsBanner {
     title: string;
     text: string | null;
     botao: string | null;
+    styleExtra: string | null;
 }
 
-export default function Banner( {imagem, title, text, botao}:propsBanner ){
+export default function Banner( {imagem, title, text, styleExtra}:propsBanner ){
+    const style = 'lg:px-[8%] lg:pb-10 xl:pb-20 md:pt-[104px] bg-gradient-to-b lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-400 via-[0%] md:via-10% to-[#04083a] md:to-70% '
+    const style2= 'w-full max-w-3xl '
+    
     return (
         <div className='relative '>
-            <div className='lg:px-[8%] lg:pb-10 xl:pb-20 md:pt-[104px] bg-gradient-to-b lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-400 via-[0%] md:via-10% to-[#04083a] md:to-70%'>
+            <div className={style}>
                 
                 <Link to='/'>
                     <img src={logo} alt="" className='max-w-[400px] w-[80%] mx-auto py-10 md:hidden' />
@@ -27,15 +31,15 @@ export default function Banner( {imagem, title, text, botao}:propsBanner ){
                             {text}
                         </p>
 
-                        <Link to="/produtos" className='w-auto underline text-xl text-white font-semibold'>
+                        {/*<Link to="/produtos" className='w-auto underline text-xl text-white font-semibold'>
                             <button className=' py-3 px-10 mt-5 rounded-2xl bg-red-600 hover:bg-[#04083a] transition-all'>
                                 {botao}
                             </button>
-                        </Link>
+                        </Link>*/}
                     </div>
 
-                    <div className='w-full max-w-3xl '>
-                        <img src={imagem} alt="" />
+                    <div className={style2 + styleExtra} >
+                        <img src={imagem} alt="" className=''/>
                     </div>
                     
                 </div>

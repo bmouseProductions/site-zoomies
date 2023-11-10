@@ -2,7 +2,7 @@ import CardProduto from "../../../assets/components/cardProdutos/CardProduto";
 import SliderProdutos from "../../../assets/components/sliders/SliderProdutos";
 import { AllProducts } from "../../../compartilhado/Produtos";
 
-import logo from '../../../assets/images/logoZoomies.webp'
+import logo from '../../../assets/images/logoColorida.webp'
 import { Link } from "react-router-dom";
 
 interface Produto {
@@ -54,7 +54,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
         <>
             <div className="h-[100px] bg-[#04083a] hidden md:block"></div>
             <section className="max-w-[1276px] mx-auto px-5  text-black">
-                <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto py-10 md:hidden' />
+                <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto pt-10 pb-5 md:hidden' />
                 <div className="w-full flex flex-col ">
                     <h1 className="my-10 text-xl font-medium ">
                         <Link to='/produtos' className="my-10 text-xl font-medium ">Produtos</Link> / {produto.nome}

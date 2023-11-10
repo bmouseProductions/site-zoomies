@@ -78,12 +78,7 @@ export const bifinhos = [
     {
         nome: 'Bifinho Zoolitos Calabresa',
         imagem: zoolitos,
-        descricao: "Com Zoolitos, você pode premiar o seu cãozinho em diferentes \
-            momentos, como quando ele se mostra obediente durante os \
-            treinamentos ou quando você quer oferecer aquele mimo especial. \
-            Esse petisco é compatível com todas as idades e portes de \
-            cães e, se quiser oferecer para filhotes ou cães de porte pequeno, \
-            é só fracionar o bifinho. Dá pra todo  mundo aproveitar!",
+        descricao: "Com Zoolitos, você pode premiar o seu cãozinho em diferentes momentos, como quando ele se mostra obediente durante os treinamentos ou quando você quer oferecer aquele mimo especial. Esse petisco é compatível com todas as idades e portes de cães, mas recomenda-se fracionar o bifinho caso ofereça para filhotes ou cães de porte pequeno. Dá pra todo mundo aproveitar!",
         composicao: 'Pulmão suíno, carne mecanicamente separada de aves, carne de bovino, proteína texturizada de soja*, glicerina purificada, sal refinado, aroma idêntico ao natural de calabresa, hidrolisado de fígado de suíno, propilgalato, antioxidantes (BHT e BHA), sorbato de potássio, goma xantana, ácido fosfórico,  ácido cítrico, ácido sórbico, tripolifosfato de sódio, dióxido de silício,  ácido propiônico, amônia, aroma cítrico, benzoato de sódio, ácido tartárico e corante vermelho allura.',
         doadores: 'Agrobacterium tumefaciens, Bacillus thuringiensis e Streptomyces viridochromogenes.',
         substitutos: 'Pulmão bovino.',
@@ -112,7 +107,7 @@ export const naturais = [
     {
         nome: 'Steak de Frango',
         imagem: steakFrango,
-        descricao: 'Steaks de Frango Zoomies podem ser oferecidos aos cães de todos os portes como uma recompensa em treinamentos, ao se mostrar obediente e como um mimo. Este alimento pode ser oferecido a todas as idades e portes de cães, quando oferecido para cães de porte pequeno ou filhotes, recomenda-se fracionar o steak.',
+        descricao: 'Steaks de Frango Zoomies podem ser oferecidos aos cães como forma de recompensa em treinamentos, ao se mostrarem obedientes, e também como um mimo especial. Esse petisco é indicado para todas as idades e portes de cães, sendo que, quando oferecido para cães de porte pequeno ou filhotes, recomenda-se fracionar o steak.',
         composicao: 'Carne de aves, glicerina, água, cloreto de sódio e sorbato de potássio.',
         linha: 'naturais',
     },

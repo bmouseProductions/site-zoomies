@@ -35,7 +35,7 @@ export default function Header(){
               <img src={logo} className="max-w-[200px] h-[50px] md:max-w-xs " alt="" />
             </Link>
             
-            <nav className="w-full max-w-[700px] hidden md:flex justify-around">
+            <nav className="w-full max-w-[700px]  md:flex justify-around">
               <NavLink  to="/" className='text-2xl font-medium hover:text-[#808080] transition-all' >Home</NavLink >
               <NavLink  to="/sobre" className='text-2xl font-medium hover:text-[#808080] transition-all' >Sobre</NavLink >
               <NavLink  to="/produtos" className='text-2xl font-medium hover:text-[#808080] transition-all' >Produtos</NavLink >

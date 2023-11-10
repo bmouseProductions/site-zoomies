@@ -6,7 +6,7 @@ import { AllProducts } from "../../compartilhado/Produtos"
 import CardProduto from '../../assets/components/cardProdutos/CardProduto'
 import Banner from '../../assets/components/banner/Banner'
 
-import banner from '../../assets/images/revendedores.webp'
+import banner from '../../assets/images/banners/produtos.webp'
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores'
 
 
@@ -29,9 +29,10 @@ export default function ProdutosPage(){
             <section>
                 <Banner
                     imagem={banner}
-                    title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
+                    title='Conheça nossas linhas de produtos'
                     text=''
-                    botao='uxu'
+                    botao=''
+                    styleExtra='mb-10'
                 />
             </section>
 

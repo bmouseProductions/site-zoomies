@@ -21,7 +21,7 @@ export default function Fornecedores(){
                     <h1 className='text-4xl md:text-5xl text-center'>
                         Onde encontrar os produtos Zoomies?  
                     </h1>
-                    <div className='w-full md:h-[40px] lg:h-[50px] xl:h-[60px] grid grid-cols-4 justify-items-center gap-5 mt-10'>
+                    <div className='w-full md:h-[40px] lg:h-[50px] xl:h-[60px] grid grid-cols-2 md:grid-cols-4 justify-items-center gap-5 mt-10'>
                         <a 
                             href="https://lista.mercadolivre.com.br/zoomies_NoIndex_True_SHIPPING*ORIGIN_10215068#applied_filter_id%3DSHIPPING_ORIGIN%26applied_filter_name%3DOrigem+do+frete%26applied_filter_order%3D10%26applied_value_id%3D10215068%26applied_value_name%3DLocal%26applied_value_order%3D2%26applied_value_results%3D79%26is_custom%3Dfalse" 
                             target="_blank" 

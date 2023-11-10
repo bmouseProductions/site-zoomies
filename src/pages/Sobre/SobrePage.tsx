@@ -7,7 +7,7 @@ import CardProduto from '../../assets/components/cardProdutos/CardProduto';
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import SliderProdutos from '../../assets/components/sliders/SliderProdutos';
 
-import banner from '../../assets/images/revendedores.webp'
+import bannerImg from '../../assets/images/gondola.webp'
 import Botao from '../../assets/components/button/Botao';
 
 import selo from '../../assets/images/animations/patinha.json'
@@ -32,10 +32,11 @@ export default function SobrePage(){
         <>
             <section>
                 <Banner
-                    imagem={banner}
+                    imagem={bannerImg}
                     title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
                     text='É certo cuidar de um amigo que faz parte da sua família há muito tempo. Eles nos tornam pessoas melhores e, por isso, merecem um alimento de qualidade e um lar com muito amor.'
                     botao='exe'
+                    styleExtra='mb-5 flex justify-center h-[500px] sm:h-[650px] lg:h-auto '
                 />
             </section>
 

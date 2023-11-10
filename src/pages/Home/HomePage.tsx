@@ -15,6 +15,7 @@ import banner from '../../assets/images/revendedores.webp'
 //import ilustracao from '../../assets/images/pets.webp'
 import paw from '../../assets/images/animations/paw.json'
 import naturais from '../../assets/images/naturais.webp'
+import bifinhos from '../../assets/images/bifinhos.webp'
 
 
 export default function HomePage(){
@@ -64,9 +65,10 @@ export default function HomePage(){
             <section className=''>
                 <Banner
                     imagem={banner}
-                    title='Lorem ipsum dolor, sit amet consectetur adipisicing.'
-                    text='texto de chamada para nossos produtos de extrema qualidade que dá umm pau em todos os outros concorrentes'
+                    title='A revolução do mercado pet brasileiro!'
+                    text='Com a melhor fórmula e ingredientes selecionados, oferecemos petiscos com qualidade, sabor, saúde e diversão para os nossos amigos de quatro patas.'
                     botao='Conheça nossos produtos'
+                    styleExtra=''
                 />
             </section>
             
@@ -76,7 +78,7 @@ export default function HomePage(){
             <Fornecedores />
 
             <section className='max-w-[1276px] mx-auto px-5 mt-20 '>
-                <div className='pt-14 flex flex-col items-center justify-center '>
+                <div className='lg:pt-14 flex flex-col items-center justify-center '>
                     <Lottie
                         play
                         loop
@@ -105,7 +107,7 @@ export default function HomePage(){
             <section className='max-w-[1276px] mx-auto px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row'>
                 <div className='lg:w-2/3 flex flex-col gap-5'>
                     <h1 className='text-3xl lg:text-5xl  text-black'>Linha de Bifinhos</h1>
-                    <p className='text-[#1E1E1E] text-lg'>Bifinhos são petiscos saborosos que beneficiam seu pet. Eles são ricos em proteína, fundamental para músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, prevenindo problemas bucais. Oferecem estímulo sensorial, enriquecendo o ambiente. São eficazes no treinamento, sendo ótimas recompensas. Também fortalecem o vínculo e promovem confiança entre você e seu animal de estimação.</p>
+                    <p className='text-[#1E1E1E] text-lg'>Os Bifinhos, em diversos sabores e preparados para vários portes e idades, são petiscos que além de saborosos, beneficiam a saúde de seu pet. Ricos em proteínas, esses petiscos são ótimos para manter os músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, o que previne problemas bucais. E, para um bom treinamento do seus pets, os Bifinhos são ótimas recompensas, oferecem estímulos sensoriais e fortalecem o vínculo, promovendo confiança entre você e seu animal de estimação.</p>
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
@@ -114,7 +116,7 @@ export default function HomePage(){
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] bg-[#f5a518] p-3 rounded' src={naturais} alt="" />
+                <img className='lg:w-[400px] bg-[#f5a518]  rounded' src={bifinhos} alt="" />
             </section>
         
             <section className='max-w-[1276px] mx-auto px-5 pt-12 flex gap-10 flex-col lg:flex-row-reverse'>
@@ -129,7 +131,7 @@ export default function HomePage(){
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] p-3 bg-[#f5a518] rounded' src={naturais} alt="" />
+                <img className='lg:w-[400px] bg-[#f5a518] rounded' src={naturais} alt="" />
             </section>
             
 
