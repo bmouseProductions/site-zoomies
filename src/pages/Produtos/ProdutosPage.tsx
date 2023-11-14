@@ -32,7 +32,7 @@ export default function ProdutosPage(){
                     title='Os melhores produtos '
                     text='Produtos de alta qualidade, em embalagens incríveis e, acima de tudo, muito saborosos para nossos pets.'
                     botao=''
-                    styleExtra='mb-10'
+                    styleExtra='mb-10 '
                 />
             </section>
 
@@ -42,7 +42,7 @@ export default function ProdutosPage(){
                         play
                         loop
                         animationData={paw}
-                        className='w-[50px] mx-auto'
+                        className='w-[150px] mx-auto rotate-45'
                     />
                     <h1 className='text-center text-5xl xl:text-6xl text-black '>
                         Produtos

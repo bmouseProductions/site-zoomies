@@ -36,7 +36,7 @@ export default function SobrePage(){
                     title='Conheça a Zoomies'
                     text='A Zoomies é a mais nova marca do Grupo Patense, dedicada a oferecer petiscos saborosos e de alta qualidade para os nossos amigos pets.'
                     botao='exe'
-                    styleExtra='mb-5 mx-auto flex justify-center w-[280px] max-w-[400px] sm:max-w-none lg:h-[650px] lg:w-auto'
+                    styleExtra='mb-5 mx-auto flex justify-center w-[270px] h-[500px]  sm:max-w-none md:max-h-[650px] md:max-w-[400px] '
                 />
             </section>
 
@@ -77,7 +77,7 @@ export default function SobrePage(){
                         slideCount={slideCountProdutos}
                     />
                 </div>
-                <div className='mt-10 mb-16 flex justify-center '>
+                <div className='mt-12 mb-5 flex justify-center '>
                     <Botao 
                         children='Veja todos os produtos'
                         page='/produtos'

@@ -83,7 +83,7 @@ export default function HomePage(){
                         play
                         loop
                         animationData={paw}
-                        className='w-[50px] mx-auto'
+                        className='w-[150px] mx-auto rotate-45'
                     />
                     <h1 className='text-3xl lg:text-5xl  text-center'>
                         Conheça nossos produtos
@@ -142,7 +142,7 @@ export default function HomePage(){
                         play
                         loop
                         animationData={paw}
-                        className='w-[50px] mx-auto'
+                        className='w-[150px] mx-auto rotate-45'
                     />
                     <h1 className='text-3xl lg:text-5xl text-center '>Assista os vídeos e conheça melhor nossos produtos</h1>
                 </div>

@@ -15,7 +15,7 @@ export default function Fornecedores(){
                     play
                     loop
                     animationData={paw}
-                    className='w-[50px] mx-auto'
+                    className='w-[150px] mx-auto rotate-45'
                 />
                 <div className='max-w-[1276px] mx-auto px-5 pb-10 flex flex-col items-center'>
                     <h1 className='text-4xl md:text-5xl text-center'>

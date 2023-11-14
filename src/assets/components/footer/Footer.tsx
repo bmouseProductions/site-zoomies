@@ -21,19 +21,19 @@ export default function Footer(){
                 
                 <div  className='max-w-[1276px] mx-auto px-5 py-10 md:py-14 grid grid-cols-4 justify-items-center gap-2 md:gap-5 '>
                     
-                    <a href='https://www.farol.ind.br/' className='w-full md:md:min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer'>
+                    <a href='https://www.farol.ind.br/' className='w-full md:md:min-h-[160px] p-2 sm:p-5  flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer'>
                         <img src={logoFarol} className=' ' alt="" />
                     </a>
 
-                    <a href='https://patense.com.br/' className='w-full md:min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                    <a href='https://patense.com.br/' className='w-full md:min-h-[160px] p-2 sm:p-5  flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                         <img src={logoPatense} className=' ' alt="" />
                     </a>
 
-                    <a href='https://petsmellon.com.br/' className='w-full md:min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
-                        <img src={logoPetsmellon} className=' ' alt="" />
+                    <a href='https://petsmellon.com.br/' className='w-full md:min-h-[160px] p-2 sm:p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                        <img src={logoPetsmellon} className='md:max-h-[110px]' alt="" />
                     </a>
 
-                    <a href='https://lojazoomies.com/' className='w-full md:min-h-[160px] p-5 flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
+                    <a href='https://lojazoomies.com/' className='w-full md:min-h-[160px] p-2 sm:p-5  flex justify-center items-center bg-white shadow-2xl rounded-3xl cursor-pointer '>
                         <img src={logoZoomies} className='  ' alt="" />
                     </a>
                     
