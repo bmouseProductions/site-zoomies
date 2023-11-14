@@ -36,7 +36,7 @@ export default function SobrePage(){
                     title='Conheça a Zoomies'
                     text='A Zoomies é a mais nova marca do Grupo Patense, dedicada a oferecer petiscos saborosos e de alta qualidade para os nossos amigos pets.'
                     botao='exe'
-                    styleExtra='mb-5 mx-auto flex justify-center w-[273px] h-[500px]  sm:max-w-none md:max-h-[650px] md:max-w-[400px] '
+                    styleExtra='mb-5 mx-auto flex justify-center max-w-[250px] max-h-[350px]  md:max-w-[350px] md:max-h-[600px] lg:max-h-[650px] md:max-w-[430px] '
                 />
             </section>
 

@@ -32,7 +32,7 @@ export default function ProdutosPage(){
                     title='Os melhores produtos '
                     text='Produtos de alta qualidade, em embalagens incríveis e, acima de tudo, muito saborosos para nossos pets.'
                     botao=''
-                    styleExtra='mb-10 '
+                    styleExtra='mb-5 '
                 />
             </section>
 
