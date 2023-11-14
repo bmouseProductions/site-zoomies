@@ -37,7 +37,7 @@ export default function ProdutosPage(){
             </section>
 
             <section className="max-w-[1276px] mx-auto px-5 mb-24 text-blackbg-home">
-                <div className='my-14 '>
+                <div className='mb-10 '>
                     <Lottie
                         play
                         loop

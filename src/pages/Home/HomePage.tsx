@@ -154,7 +154,7 @@ export default function HomePage(){
                 </div>
                 <div className='w-auto mx-auto  '>
                     <Botao
-                        children= 'Increva-se'
+                        children= 'Inscreva-se'
                         page='https://www.youtube.com/@zoomiesbr'
                         icon= {<FontAwesomeIcon icon={faYoutube} className="ml-3 text-lg"/>}
                     />

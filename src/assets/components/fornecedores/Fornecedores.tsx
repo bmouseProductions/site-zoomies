@@ -1,10 +1,10 @@
 import Lottie from 'react-lottie-player'
 
 import paw from '../../images/animations/paw.json'
-import mercado from '../../images/logos-marketplace/mercado-livre-logo-4-2.png'
-import frio from '../../images/logos-marketplace/pontofrio-logo-4.png'
-import bahia from '../../images/logos-marketplace/casas-bahia-logo-3-1.png'
-import extra from '../../images/logos-marketplace/extra-logo-mercado-3.png'
+import mercado from '../../images/logos-marketplace/LogoMercadoLivre.webp'
+import frio from '../../images/logos-marketplace/pontoFrio.png'
+import bahia from '../../images/logos-marketplace/logoCasasBahia.webp'
+import extra from '../../images/logos-marketplace/LogoExtra.webp'
 
 
 export default function Fornecedores(){
