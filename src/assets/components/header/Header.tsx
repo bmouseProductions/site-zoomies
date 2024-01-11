@@ -1,10 +1,18 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+
+import {
+  Collapse,
+  Card,
+  CardBody,
+} from "@material-tailwind/react";
 
 import { faHome, faNewspaper, faBuilding, faPaw, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from '../../images/logoZoomies.webp'
+
+
 
 export default function Header(){
     const [isSticky, setIsSticky] = useState(false);
@@ -27,6 +35,12 @@ export default function Header(){
         window.removeEventListener('scroll', handleScroll);
         };
     }, [isSticky]);
+
+    /*COLLAPSE MENU MOBILE*/
+    
+    const [open, setOpen] = React.useState(false);
+    const toggleOpen = () => setOpen((cur) => !cur);
+    
     return (
       <>
         <header className="hidden lg:block fixed top-0 left-0 right-0 z-50 text-black md:text-white backdrop-blur-md menuNavigation">
@@ -44,9 +58,25 @@ export default function Header(){
             </nav>
           </div>
         </header>
+        
+        {/* NAVBAR MOBILE */}
+        <header className="flex flex-col gap-3 lg:hidden fixed bottom-0 left-0 right-0 z-50 menuNavigation">
 
-        <header className="lg:hidden fixed bottom-0 left-0 right-0 z-50 menuNavigation">
-          <nav className=" lg:hidden w-full py-5 px-2 flex justify-around text-black bg-[#fff] menhu">
+          <Collapse  open={open}>
+            <Card className={ open ? " mx-auto w-6/12 bg-blue-600 rounded": 'hidden'}>
+              <CardBody>
+                <NavLink  to="/produtos" className="py-1 flex flex-col items-center text-sm md:text-xl " onClick={toggleOpen}>
+                  Produtos
+                </NavLink >
+                <hr />
+                <NavLink  to="/produtos" className="py-1 flex flex-col items-center text-sm md:text-xl " onClick={toggleOpen}>
+                  Onde encontrar
+                </NavLink >
+              </CardBody>
+            </Card>
+          </Collapse>
+
+          <nav className=" lg:hidden w-full  py-5 px-2 flex justify-around text-black bg-[#fff] menhu">
 
             <NavLink  to="/" className="flex flex-col items-center text-sm md:text-xl" >
               <FontAwesomeIcon icon={faHome} className="text-black text-lg" />
@@ -56,10 +86,10 @@ export default function Header(){
               <FontAwesomeIcon icon={faBuilding} className="text-black text-lg" />
               Sobre
             </NavLink >
-            <NavLink  to="/produtos" className="flex flex-col items-center text-sm md:text-xl" >
+            <a  onClick={toggleOpen} className="flex flex-col items-center text-sm md:text-xl" >
               <FontAwesomeIcon icon={faPaw} className="text-black text-lg" />
               Produtos
-            </NavLink >
+            </a >
             <NavLink  to="https://lojazoomies.com/revendedor/" className="flex flex-col items-center text-sm md:text-xl" >
               <FontAwesomeIcon icon={faHandshake} className="text-black text-lg " />
               Revendedor

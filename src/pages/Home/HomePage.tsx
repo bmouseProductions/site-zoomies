@@ -77,7 +77,7 @@ export default function HomePage(){
 
             <Fornecedores />
 
-            <section className='max-w-[1276px] mx-auto px-5 mt-20 '>
+            <section className='max-w-[1276px] mx-auto px-5 lg:mt-10 '>
                 <div className='lg:pt-14 flex flex-col items-center justify-center '>
                     <Lottie
                         play
