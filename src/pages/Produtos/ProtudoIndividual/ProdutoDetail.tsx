@@ -24,7 +24,7 @@ interface ProductDetailProps {
 const slideBifinhos = [
     ...AllProducts.filter(produto => produto.linha === 'bifinhos').map( (produto) => (
         <CardProduto 
-            link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+            link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
             image= {produto.imagem} 
             name= {produto.nome}
             styleExtra='mx-5 mt-10'
@@ -37,7 +37,7 @@ const slideCountBifinhos= slideBifinhos.length;
 const slideNaturais = [
     ...AllProducts.filter(produto => produto.linha === 'naturais').map( (produto) => (
         <CardProduto 
-            link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+            link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
             image= {produto.imagem} 
             name= {produto.nome}
             styleExtra='mx-5 mt-10'
@@ -57,7 +57,7 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                 <img src={logo} alt="" className='max-w-[400px] w-[90%] mx-auto pt-10 pb-5 md:hidden' />
                 <div className="w-full flex flex-col ">
                     <h1 className="my-10 text-xl font-medium ">
-                        <Link to='/produtos' className="my-10 text-xl font-medium ">Produtos</Link> / {produto.nome}
+                        <Link to='/produtos/catalogo' className="my-10 text-xl font-medium ">Produtos</Link> / {produto.nome}
                     </h1>
 
                     <div className="flex flex-col lg:flex-row justify-center items-center">

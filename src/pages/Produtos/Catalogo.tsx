@@ -53,7 +53,7 @@ export default function ProdutosPage(){
                     {AllProducts.map( (produto, index) => (
                         <Tilt options={defaultOptions} key={index}>
                             <CardProduto 
-                                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
+                                link={`/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
                                 image= {produto.imagem} 
                                 name= {produto.nome} 
                             />

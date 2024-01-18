@@ -40,7 +40,7 @@ export default function HomePage(){
     const slideProdutos = [
         ...AllProducts.map( (produto) => (
             <CardProduto 
-                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+                link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
                 styleExtra='mx-3 mt-10 '
@@ -98,7 +98,7 @@ export default function HomePage(){
                 <div className='mt-12 flex justify-center '>
                     <Botao 
                         children="Veja todos o produtos"
-                        page='/produtos'
+                        page='/produtos/catalogo'
                         icon= {''}
                     />
                 </div>  
@@ -111,7 +111,7 @@ export default function HomePage(){
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
-                            page='/produtos'
+                            page='/produtos/catalogo'
                             icon= {''}
                         />
                     </div>
@@ -126,7 +126,7 @@ export default function HomePage(){
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
-                            page='/produtos'
+                            page='/produtos/catalogo'
                             icon= {''}
                         />
                     </div>
