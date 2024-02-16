@@ -37,7 +37,7 @@ export default function App() {
             {AllProducts.map((produto, index) => (
               <Route
                 key={index}
-                path={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
+                path={`/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
                 element={<ProdutoDetail produto={produto} />}
               />
             ))}

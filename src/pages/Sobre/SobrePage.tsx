@@ -1,13 +1,16 @@
+
+
+import { Link } from 'react-router-dom';
 import { AllProducts } from '../../compartilhado/Produtos';
 
 import Lottie from 'react-lottie-player';
 
-import Banner from '../../assets/components/banner/Banner';
+import banner from '../../assets/images/banners/bannerSobre.webp'
 import CardProduto from '../../assets/components/cardProdutos/CardProduto';
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import SliderProdutos from '../../assets/components/sliders/SliderProdutos';
 
-import bannerImg from '../../assets/images/gondola.webp'
+import logo from '../../assets/images/logoZoomies.webp'
 import Botao from '../../assets/components/button/Botao';
 
 import selo from '../../assets/images/animations/patinha.json'
@@ -30,14 +33,29 @@ export default function SobrePage(){
 
     return (
         <>
-            <section>
-                <Banner
-                    imagem={bannerImg}
-                    title='Conheça a Zoomies'
-                    text='A Zoomies é a mais nova marca do Grupo Patense, dedicada a oferecer petiscos saborosos e de alta qualidade para os nossos amigos pets.'
-                    botao='exe'
-                    styleExtra='mb-5 mx-auto flex justify-center max-w-[250px] max-h-[350px]  md:max-w-[350px] md:max-h-[600px] lg:max-h-[650px] md:max-w-[430px] '
-                />
+
+            <section className='relative'>
+                <div className=' xl:h-auto lg:pt-[104px] bg-[#0089cb] '>
+                    
+                    <Link to='/'>
+                        <img src={logo} alt="" className='max-w-[400px] w-[80%] mx-auto py-10 lg:hidden' />
+                    </Link>
+                    <div className='w-full flex flex-col md:flex-row-reverse justify-end bannerHome'>
+                        <div className='max-w-[600px] px-5 flex flex-col justify-center'>
+                            <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold text-center md:text-start text-white '>
+                                Conheça a Zoomies
+                            </h1>
+                            <p className="mb-7 text-lg text-[#ffffff] text-center lg:text-start mt-7">
+                                A Zoomies é a mais nova marca do Grupo Patense, dedicada a oferecer petiscos saborosos e de alta qualidade para os nossos amigos pets.
+                            </p>
+                        </div>
+
+                        <div className='w-full max-w-2xl ' >
+                            <img src={banner} alt="" className=''/>
+                        </div>
+                        
+                    </div>
+                </div>
             </section>
 
             <section className='max-w-[1276px] mx-auto max-h-[650px] md:max-h-[800px] lg:max-h-[400px] px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row '>
@@ -45,7 +63,7 @@ export default function SobrePage(){
                     <p className='text-[#1E1E1E] text-xl'>A missão da Zoomies é revolucionar o mercado pet com sua inovação, qualidade e atenção aos detalhes. Nós acreditamos que os pets merecem o melhor, por isso, selecionamos os ingredientes com muito cuidado e criamos receitas saborosas e saudáveis para eles.</p>
                     
                 </div>
-                <div className='relative top-[-40px]  lg:top-[-100px] '>
+                <div className='relative top-[-40px]  lg:top-[-80px] '>
                     <Lottie
                         play
                         loop

@@ -33,7 +33,7 @@ const slideBifinhos = [
 ];
 const slideCountBifinhos= slideBifinhos.length;
 
-/*SLIDE BIFINHOS*/
+/*SLIDE NATURAIS*/
 const slideNaturais = [
     ...AllProducts.filter(produto => produto.linha === 'naturais').map( (produto) => (
         <CardProduto 

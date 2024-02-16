@@ -54,7 +54,7 @@ export default function Header(){
       <>
         <header
           onMouseLeave={handleMouseLeave}
-          className="hidden lg:block fixed top-0 left-0 right-0 z-50 text-black md:text-white backdrop-blur-md menuNavigation"
+          className="hidden lg:block w-full fixed top-0 left-0 right-0 z-50 text-black md:text-white backdrop-blur-md menuNavigation"
         >
           <div className="w-full container mx-auto md:min-h-[100px] p-0 md:px-5 md:py-5 flex items-center justify-between">
             <Link to="/" id='logoImg' className='hidden md:block md:mr-[20px] lg:ml-[70px] lg:mr-[50px]'>

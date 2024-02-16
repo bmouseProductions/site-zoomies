@@ -21,7 +21,7 @@ export default function SliderComponent({slideContent}: SliderProps) {
         autoplaySpeed: 1300,
         responsive: [
             {
-                breakpoint: 1536,
+                breakpoint: 1439,
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1
@@ -43,9 +43,9 @@ export default function SliderComponent({slideContent}: SliderProps) {
             },
         ]
       };
-
+      
   return (
-        <Slider {...settings} className="w-full m-auto ">
+        <Slider {...settings} className="w-full m-auto max-w-[1800px] ">
             {slideContent.map((slide, index) => (
                 <div key={index} >
                     {slide}

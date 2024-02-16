@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player';
@@ -6,17 +6,25 @@ import Lottie from 'react-lottie-player';
 import logo from '../../../assets/images/logoZoomies.webp'
 import mapa from '../../../assets/images/animations/mapa3.json'
 
+interface Local {
+    estado: string;
+    cidades: {
+      [cidade: string]: {
+        localizacoes: string;
+      };
+    };
+}
 
 export default function Encontrar(){
     const style = 'lg:px-[8%] pb-12 lg:pb-10 xl:pb-20 lg:pt-[104px] bg-gradient-to-b lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-400 via-[0%] mlocalizacoes:via-10% to-[#04083a] mlocalizacoes:to-70% '
     const style2= 'w-full max-w-3xl '
 
-    const  locais = [
+    const  locais:Local[] = [
         {
             estado:"Amazonas",
             cidades: {
                 "Manaus" : {
-                    localizacoes:"https://www.google.com/maps/d/u/3/embed?mid=1LROpxTId3koHKOaJGO_4zoAoDJntkZc&ehbc=2E312F&noprof=1"
+                    localizacoes:"https://www.google.com/maps/d/u/2/embed?mid=1Z7KYTmOr2vSHDaqAvL0AOvUnldk7zn0&ehbc=2E312F"
                 }
             }
         },
@@ -24,90 +32,97 @@ export default function Encontrar(){
         {
             "estado": "Bahia",
             "cidades": {
-            "Barreiras": {
-                localizacoes: "url de localização"
-            },
-            "Lauro de Freitas": {
-                localizacoes: "url de localização"
-            }
+                /*
+                "Barreiras": {
+                    localizacoes: ""
+                },*/
+                "Lauro de Freitas": {
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1GmCH7vBaKytC1L9Qh6s3UOIMAoWBL-A&ehbc=2E312F"
+                }
             }
         },
 
         {
             "estado": "Minas Gerais",
             "cidades": {
+                /*
                 "Belo Horizonte": {
                     localizacoes: "url de localização",
                 },
                 "Bocauva": {
                     localizacoes: "url de localização"
                 },
+                */
                 "Brasilia de Minas": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1vlLTtuOxx7c_kGOvKowmQa_wUpAJXpA&ehbc=2E312F"
                 },
                 "Cataguases": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=12mK0a05uZNL-Px0KnUpCxKOxdHr3Qx0&ehbc=2E312F"
                 },
                 "Janauba": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1mmnGPOVAcldhbo4Y9sezRTCLr9Q2Fm8&ehbc=2E312F"
                 },
                 "Januaria": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1rkY68bKd8DY204hhrqng5skYowbxJ1M&ehbc=2E312F"
                 },
                 "Juiz de Fora": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=151jqB07yVKs5--PDNG-5C2-1uo7Q-aI&ehbc=2E312F"
                 },
                 "Lambari": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1sHImnnGPH5PjfqLXK9w3uen2Z2Sg9ng&ehbc=2E312F"
                 },
                 "Martinho de Campos": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1Ta0gAHS5_jOdTO6bJMdmrx8nfE1LHyI&ehbc=2E312F"
                 },
                 "Montes Claros": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1b9WEL17uokIjw41Wrz3sgXXMMRWlqQc&ehbc=2E312F"
                 },
                 "Ouro Preto": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=18KJAtI_yt9eSh-i1GXezcJkXoGwKcXM&ehbc=2E312F"
                 },
                 "Para de Minas": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=191-9t7rP8cn8pxG8BuXtDnFzlSKCt94&ehbc=2E312F"
                 },
                 "Patos de Minas": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1nk5KzUve73zIIuAG1t94Jpp956bn2Rs&ehbc=2E312"
                 },
                 "Pirapora": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1I8eJpwbMNik7WbmZ-VN0_3TBsq8_UJM&ehbc=2E312F"
                 },
+                /*
                 "Poços de Caldas": {
-                    "ALEXANDRE VILLAS BOAS": "url de localização"
-                },
-                "Ponte Nova": {
                     localizacoes: "url de localização"
+                },
+                */
+                "Ponte Nova": {
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1pNkJgd3xIi4nritfFnMj7sgb6iOdhgg&ehbc=2E312F"
                 },
                 "Santa Luzia": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1rHQ2YHkJ7RUH-VxoWSixy5LMQuo8aXA&ehbc=2E312F"
                 },
                 "São Gonçalo do Sapucai": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1-gA9f7JnPGNYCYaTf2WdooXmPaYUWCY&ehbc=2E312F"
                 },
                 "Três Corações": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1-gW4u93Gtltu0z1L1ER3NJzlcdRWiSU&ehbc=2E312F"
                 },
                 "Uberaba": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1ptBB4E2EMNLVOmnPdzBeW8aYIImHaoQ&ehbc=2E312F"
                 },
                 "Uberlândia": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1RjCQuT9TJ0ddfYuDl7toff62hs4zG0Q&ehbc=2E312F"
                 },
+                /*
                 "Unai": {
                     localizacoes: "url de localização"
                 },
+                */
                 "Visconde do Rio Branco": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1DsiLRoLyCzQf1TAt4r99iZ7n-bAermY&ehbc=2E312F"
                 }
             }
         },
-
+        /*
         {
             "estado": "Paraná",
             "cidades": {
@@ -116,18 +131,20 @@ export default function Encontrar(){
                 }
             }
         },
-
+        */
         {
             "estado": "Rio Grande do Sul",
             "cidades": {
+                /*
                 "Eldourado do Sul": {
                     localizacoes: "url de localização"
                 },
+                */
                 "Porto Alegre": {
-                    localizacoes: "url de localização",
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1W-ENlTMivZki-wiN4xes_HQpWSrexf0&ehbc=2E312F",
                 },
                 "Viamão": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1Mp6eOu5rHB6lN8kdBuG7-svMIOKlWTw&ehbc=2E312F"
                 }
             }
         },
@@ -136,7 +153,7 @@ export default function Encontrar(){
             "estado": "Santa Catarina",
             "cidades": {
                 "Gaspar": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1EGE0y9yiXa6VEKzzpe0j1v05aI_tK00&ehbc=2E312F"
                 }
             }
         },
@@ -145,38 +162,44 @@ export default function Encontrar(){
             "estado": "São Paulo",
             "cidades": {
                 "Águas de Lindoia": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1upAH94iYyHsKhBVQPUqOYaK5HEF8krU&ehbc=2E312F"
                 },
                 "Amparo": {
-                    localizacoes: "url de localização",
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1fqpKQPNhwiKpUI2nRcimm3GGUWkxmvQ&ehbc=2E312F",
                 },
+                /*
                 "CAMPINAS": {
                     localizacoes: "url de localização",
-                },
+                },*/
                 "CARAPICUIBA": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1MyKrs6RSbDJCShizywAuf2d41x4GE-4&ehbc=2E312F"
                 },
                 "EMBU DAS ARTES": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1k5ZPjb8-qXwzkruFg7V3ckY5WziCbC0&ehbc=2E312F"
                 },
+                /*
                 "INDAIATUBA": {
                     localizacoes: "url de localização"
                 },
+                */
                 "ITAI": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1I1w8EzV781V6--5NP5dH5e0M7HDR-RM&ehbc=2E312F"
                 },
                 "JUNDIAI": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1UIrZ4VAZBX_HezN8MqPcA0uVSTAkJBM&ehbc=2E312F"
                 },
                 "PRAIA GRANDE": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1ml28eLV4IDi5J_2VZ7zPViwPjrEnjIA&ehbc=2E312F"
                 },
+                /*
                 "PRESIDENTE PRUDENTE": {
                     localizacoes: "url de localização"
                 },
+                */
                 "SAO CARLOS": {
-                    localizacoes: "url de localização"
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1piF-es9ZroL_ee0RrqXsOZYaGt9arIc&ehbc=2E312F"
                 },
+                /*
                 "SAO PAULO": {
                     localizacoes: "url de localização",
                 },
@@ -186,32 +209,34 @@ export default function Encontrar(){
                 "SUMARE": {
                     localizacoes: "url de localização"
                 },
+                */
                 "VINHEDO": {
-                    localizacoes: "url de localização",
+                    localizacoes: "https://www.google.com/maps/d/u/2/embed?mid=1PgVXCf1CdSpZEccE81HVtYIEEY08JTI&ehbc=2E312F",
                 }
             }
         }
     ]
 
-    const iframe = document.querySelector('#maps') as HTMLIFrameElement;
-    console.log(iframe);
-    setTimeout( () => {console.log(iframe)}, 15000)
+    
 
-    if (iframe) {
-        const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
-        
-        if (iframeDocument) {
-            const header = iframeDocument.querySelector('.i4ewOd-pzNkMb-haAclf');
-            console.log(header);
-        }
-    }
-
-    const [estadoSelecionado, setEstadoSelecionado] = useState('');
+    const [estadoSelecionado, setEstadoSelecionado] =useState<string>('');
     const [cidadeSelecionada, setCidadeSelecionada] = useState('');
+    const [localizacaoUrl, setLocalizacaoUrl] = useState('');
 
     const cidadesDoEstadoSelecionado = estadoSelecionado
     ? Object.keys(locais.find((local) => local.estado === estadoSelecionado)?.cidades || {})
     : [];
+
+    useEffect(() => {
+        // Atualizar a URL da localização quando a cidade for alterada
+        if (estadoSelecionado && cidadeSelecionada) {
+          const local = locais.find((local) => local.estado === estadoSelecionado)?.cidades?.[cidadeSelecionada];
+          if (local) {
+            setLocalizacaoUrl(local.localizacoes);
+          }
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [estadoSelecionado, cidadeSelecionada]);
 
     const handleEstadoChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const novoEstadoSelecionado = e.target.value;
@@ -269,7 +294,7 @@ export default function Encontrar(){
                 
             </div>
 
-            <div className='container mx-auto flex flex-col lg:flex-row gap-10'>
+            <section className='max-w-[1276px] mx-auto px-5  flex flex-col lg:flex-row gap-10'>
                 <div className='flex flex-col gap-7'>
                     <div className='w-full'>
                         <p>Aqui voce poderá encontrar os pontos de vendas Zoomies ques estão distribuídos ao redor do brasil,
@@ -315,14 +340,13 @@ export default function Encontrar(){
 
                 <div>
                     <div className='w-[500px] h-[300px] bg-sky-600 '>
-                        <iframe
-                            id='maps'
-                            className='w-full h-full'
-                            src=""
-                        />
+                    <iframe 
+                        src={localizacaoUrl}
+                        className='w-full h-full'
+                    />
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

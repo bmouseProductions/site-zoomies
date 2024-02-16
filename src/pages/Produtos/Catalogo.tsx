@@ -4,10 +4,11 @@ import paw from '../../assets/images/animations/paw.json'
 
 import { AllProducts } from "../../compartilhado/Produtos"
 import CardProduto from '../../assets/components/cardProdutos/CardProduto'
-import Banner from '../../assets/components/banner/Banner'
 
-import banner from '../../assets/images/banners/produtos.webp'
+import banner from '../../assets/images/banners/BannerProdutos.png'
+import logo from '../../assets/images/logoZoomies.webp'
 import Fornecedores from '../../assets/components/fornecedores/Fornecedores'
+import { Link } from 'react-router-dom'
 
 
 const defaultOptions = {
@@ -26,14 +27,26 @@ const defaultOptions = {
 export default function ProdutosPage(){
     return (
         <>
-            <section>
-                <Banner
-                    imagem={banner}
-                    title='Os melhores produtos '
-                    text='Produtos de alta qualidade, em embalagens incríveis e, acima de tudo, muito saborosos para nossos pets.'
-                    botao=''
-                    styleExtra='mb-5 '
-                />
+
+            <section className='relative'>
+                <div className=' xl:h-auto lg:pt-[104px] bg-[#0089cb] '>
+                    
+                    <Link to='/'>
+                        <img src={logo} alt="" className='max-w-[400px] w-[80%] mx-auto py-10 lg:hidden' />
+                    </Link>
+                    <div className='mt-5 w-full flex flex-col items-center bannerHome'>
+                        <div className=' px-5 flex flex-col justify-center'>
+                            <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold text-center md:text-start text-white '>
+                                Os melhores produtos!
+                            </h1>
+                        </div>
+
+                        <div className='w-full max-w-[80%] ' >
+                            <img src={banner} alt="" className=''/>
+                        </div>
+                        
+                    </div>
+                </div>
             </section>
 
             <section className="max-w-[1276px] mx-auto px-5 mb-24 text-blackbg-home">
