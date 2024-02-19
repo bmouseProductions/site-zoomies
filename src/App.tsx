@@ -32,12 +32,12 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/sobre" element={<Sobre />}/>
-            <Route path="/produtos/catalogo" element={<Produtos />}/>
-            <Route path="/produtos/onde-encontrar" element={<Encontrar />}/>
+            <Route path="/produtos" element={<Produtos />}/>
+            <Route path="/onde-encontrar" element={<Encontrar />}/>
             {AllProducts.map((produto, index) => (
               <Route
                 key={index}
-                path={`/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
+                path={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`}
                 element={<ProdutoDetail produto={produto} />}
               />
             ))}

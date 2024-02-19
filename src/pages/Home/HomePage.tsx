@@ -24,7 +24,7 @@ export default function HomePage(){
     const slideProdutos = [
         ...AllProducts.map( (produto) => (
             <CardProduto 
-                link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
                 styleExtra='mx-3 mt-10 '
@@ -37,7 +37,7 @@ export default function HomePage(){
     const slideBifinhos = [
         ...AllProducts.filter(produto => produto.linha === 'bifinhos').map( (produto) => (
             <CardProduto 
-                link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
                 styleExtra='mx-5 mt-10'
@@ -50,7 +50,7 @@ export default function HomePage(){
     const slideNaturais = [
         ...AllProducts.filter(produto => produto.linha === 'naturais').map( (produto) => (
             <CardProduto 
-                link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
                 styleExtra='mx-5 mt-10'
@@ -127,7 +127,7 @@ export default function HomePage(){
                 <div className='mt-12 flex justify-center '>
                     <Botao 
                         children="Veja todos o produtos"
-                        page='/produtos/catalogo'
+                        page='/produtos'
                         icon= {''}
                     />
                 </div> 
@@ -136,12 +136,14 @@ export default function HomePage(){
             {/*SECTION BIFINHOS*/}
             <section className='max-w-[1276px] mx-auto px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row'>
                 <div className='lg:w-2/3 flex flex-col gap-5'>
-                    <h1 className='text-4xl lg:text-5xl  text-black'>Linha de <br className='hidden md:block'/> Bifinhos</h1>
+                    <h1 className='text-4xl lg:text-5xl  text-black'>Linha de <br className='hidden md:block'/>
+                        Bifinhos
+                    </h1>
                     <p className='text-[#1E1E1E] text-lg'>Os Bifinhos, em diversos sabores e preparados para vários portes e idades, são petiscos que além de saborosos, beneficiam a saúde de seu pet. Ricos em proteínas, esses petiscos são ótimos para manter os músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, o que previne problemas bucais. E, para um bom treinamento do seus pets, os Bifinhos são ótimas recompensas, oferecem estímulos sensoriais e fortalecem o vínculo, promovendo confiança entre você e seu animal de estimação.</p>
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
-                            page='/produtos/catalogo'
+                            page='/produtos'
                             icon= {''}
                         />
                     </div>

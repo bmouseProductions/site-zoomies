@@ -22,7 +22,7 @@ export default function SobrePage(){
     const slideProdutos = [
         ...AllProducts.map( (produto) => (
             <CardProduto 
-                link={`/produtos/catalogo/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
+                link={`/produtos/${produto.nome.toLowerCase().replace(/\s+/g, '-')}`} 
                 image= {produto.imagem} 
                 name= {produto.nome}
                 styleExtra='mx-5 mt-10'
@@ -98,7 +98,7 @@ export default function SobrePage(){
                 <div className='mt-12 mb-5 flex justify-center '>
                     <Botao 
                         children='Veja todos os produtos'
-                        page='/produtos/catalogo'
+                        page='/produtos'
                         icon=''
                     />
                 </div>  

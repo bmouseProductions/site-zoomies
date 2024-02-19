@@ -11,10 +11,10 @@ import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-sv
 export default function Footer(){
     return (
         <>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='bg-gradient-to-b from-white from-[90%] to-[#f5a518] to-[90%] '>
-                <path fill="#f5a518" fillOpacity="1" d="M0,128L60,144C120,160,240,192,360,224C480,256,600,288,720,272C840,256,960,192,1080,160C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='bg-gradient-to-b from-white from-[90%] to-[#0089cb] to-[90%] '>
+                <path fill="#0089cb" fillOpacity="1" d="M0,128L60,144C120,160,240,192,360,224C480,256,600,288,720,272C840,256,960,192,1080,160C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
             </svg> 
-            <footer className="w-full bg-[#f5a518] pb-[80px] md:pb-0">
+            <footer className="w-full bg-[#0089cb] pb-[80px] md:pb-0">
                 <div className='max-w-[1276px] mx-auto px-5 '>
                     <img src={grupoPatense} className='w-full max-w-[400px] mx-auto ' alt="" />
                 </div>

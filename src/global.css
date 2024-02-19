@@ -90,3 +90,8 @@ h1{
     justify-content: center;
   }
 }
+
+.bg-faixa{
+  background-image: url(./assets/images/faixa.png);
+  background-size: 100%;
+}

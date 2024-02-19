@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
-import Lottie from 'react-lottie-player';
 
 import logo from '../../../assets/images/logoZoomies.webp'
-import mapa from '../../../assets/images/animations/mapa3.json'
+import mapa from '../../../assets/images/banners/bannerEncontrar.webp'
 
 interface Local {
     estado: string;
@@ -16,8 +15,6 @@ interface Local {
 }
 
 export default function Encontrar(){
-    const style = 'lg:px-[8%] pb-12 lg:pb-10 xl:pb-20 lg:pt-[104px] bg-gradient-to-b lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-400 via-[0%] mlocalizacoes:via-10% to-[#04083a] mlocalizacoes:to-70% '
-    const style2= 'w-full max-w-3xl '
 
     const  locais:Local[] = [
         {
@@ -254,17 +251,17 @@ export default function Encontrar(){
         <>
             {/*BANNER*/}
             <div className='relative'>
-                <div className={style}>
+                <div className="xl:h-auto lg:pt-[104px] bg-[#0089cb] ">
                     
                     <Link to='/'>
                         <img src={logo} alt="url de localização" className='max-w-[400px] w-[80%] mx-auto py-10 lg:hidden' />
                     </Link>
-                    <div className='max-w-[1276px] w-full flex flex-col-reverse lg:flex-row justify-center items-center'>
-                        <div className='max-w-[500px] px-5 mlocalizacoes:mb-24 lg:mb-20'>
-                            <h1 className='text-4xl xl:text-6xl font-bold text-center lg:text-start text-white '>
+                    <div className='max-w-[1276px] lg:px-5 mx-auto w-full flex flex-col-reverse lg:flex-row-reverse justify-center items-center'>
+                        <div className='max-w-[500px] px-5 lg:px-0 pb-5'>
+                            <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold text-center lg:text-start text-white '>
                                 Onde Encontrar
                             </h1>
-                            <p className="text-lg text-[#d3d3d3] text-center lg:text-start mt-7">
+                            <p className="text-lg text-[#fff] text-center lg:text-start mt-7">
                                 Saiba onde encontrar os produtos da marca mais deliciosa do Brasi!!
                             </p>
 
@@ -275,34 +272,29 @@ export default function Encontrar(){
                             </Link>*/}
                         </div>
 
-                        <div className={style2} >
-                            <Lottie
-                                play
-                                loop
-                                animationData={mapa}
-                                className='w-[80%] mx-auto'
-                            />
+                        <div className="w-full max-w-2xl " >
+                            <img src={mapa} alt="" />
                         </div>
                         
                     </div>
                 </div>
-                <div className=' absolute z-30 w-full bottom-0 bg-gradient-to-b from-transparent from-[90%] to-[#fff] to-[90%]'>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#fff" fillOpacity="1" d="M0,128L60,144C120,160,240,192,360,224C480,256,600,288,720,272C840,256,960,192,1080,160C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-                    </svg>  
-                </div>
                 
             </div>
 
-            <section className='max-w-[1276px] mx-auto px-5  flex flex-col lg:flex-row gap-10'>
-                <div className='flex flex-col gap-7'>
+            <section className='mt-10 max-w-[1276px] mx-auto px-5 flex flex-col lg:flex-row gap-10'>
+                <div className='flex flex-col gap-7 items-center max-w-[600px] '>
+                    <div className='bg-faixa w-full md:w-[500px] h-[60px]'>
+                        <h1 className='text-5xl  flex items-center justify-center text-white'>
+                            Encontre aqui
+                        </h1>
+                    </div>
                     <div className='w-full'>
                         <p>Aqui voce poderá encontrar os pontos de vendas Zoomies ques estão distribuídos ao redor do brasil,
                             selecione os campos para encontrar o ponto mais próximo de você.
                         </p>
                     </div>
 
-                    <div className='w-full flex flex-col gap-5'>
+                    <div className='w-full flex flex-col gap-5 px-5'>
                         {/* Select para escolher o estado */}
                         <select 
                             value={estadoSelecionado} 
@@ -338,13 +330,12 @@ export default function Encontrar(){
                     </div>
                 </div>
 
-                <div>
-                    <div className='w-[500px] h-[300px] bg-sky-600 '>
+                
+                <div className='mx-auto w-full h-[300px] md:h-[400px] lg:h-[300px] bg-sky-600 '>
                     <iframe 
                         src={localizacaoUrl}
                         className='w-full h-full'
                     />
-                    </div>
                 </div>
             </section>
         </>

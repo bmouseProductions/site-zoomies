@@ -28,7 +28,7 @@ export default function SliderComponent({slideContent}: SliderProps) {
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1023,
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 1
