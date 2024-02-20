@@ -8,13 +8,13 @@ import Produtos from './pages/Produtos/Catalogo';
 import ProdutoDetail from './pages/Produtos/ProtudoIndividual/ProdutoDetail';
 import ErrorPage from "./pages/Error/ErrorPage";
 
-import Header from "./assets/components/header/Header";
 import Footer from "./assets/components/footer/Footer";
 import ScrollToTop from "./assets/components/scrollTop/Scroll";
 import BackTop from "./assets/components/backTop/Index";
 
 import { AllProducts } from "./compartilhado/Produtos";
 import Encontrar from "./pages/Produtos/OndeEncontrar/Encontrar";
+import { MegaMenuWithHover } from './assets/components/header/Header';
 
 
 
@@ -26,8 +26,8 @@ export default function App() {
     <Router>
       <>
         <ScrollToTop />
-        <Header />
-
+        <MegaMenuWithHover/>
+        <MegaMenuWithHover/>
         <main className=''>
           <Routes>
             <Route path="/" element={<Home />}/>

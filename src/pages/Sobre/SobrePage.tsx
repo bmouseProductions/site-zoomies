@@ -58,11 +58,20 @@ export default function SobrePage(){
                 </div>
             </section>
 
-            <section className='max-w-[1276px] mx-auto max-h-[650px] md:max-h-[800px] lg:max-h-[400px] px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row '>
+            <div className='mx-auto bg-faixa w-full md:w-[500px] lg:w-[800px] p-2 mt-20 mb-5 lg:mb-20'>
+                <h1 className='text-5xl lg:text-7xl  flex items-center justify-center text-white'>
+                    Quem somos?
+                </h1>
+            </div>
+
+            <section className='max-w-[1276px] mx-auto max-h-[650px] md:max-h-[800px] lg:max-h-[400px] px-5 pb-10 flex gap-10 flex-col lg:flex-row '>
+                
+                
+                
                 <div className='lg:w-full  flex flex-col gap-5'>
                     <p className='text-[#1E1E1E] text-xl'>A missão da Zoomies é revolucionar o mercado pet com sua inovação, qualidade e atenção aos detalhes. Nós acreditamos que os pets merecem o melhor, por isso, selecionamos os ingredientes com muito cuidado e criamos receitas saborosas e saudáveis para eles.</p>
-                    
                 </div>
+
                 <div className='relative top-[-40px]  lg:top-[-80px] '>
                     <Lottie
                         play
@@ -88,21 +97,20 @@ export default function SobrePage(){
                 </div>
             </section>
 
-            <section className='max-w-[1276px] mx-auto px-5 '>
-                <div className='flex gap-5' id='slider-produtos'>
-                    <SliderProdutos 
-                        slideContent={slideProdutos}
-                        slideCount={slideCountProdutos}
-                    />
-                </div>
-                <div className='mt-12 mb-5 flex justify-center '>
-                    <Botao 
-                        children='Veja todos os produtos'
-                        page='/produtos'
-                        icon=''
-                    />
-                </div>  
-            </section>
+
+            <div className='flex gap-5' id='slider-produtos'>
+                <SliderProdutos 
+                    slideContent={slideProdutos}
+                    slideCount={slideCountProdutos}
+                />
+            </div>
+            <div className='mt-12 mb-5 flex justify-center '>
+                <Botao 
+                    children='Veja todos os produtos'
+                    page='/produtos'
+                    icon=''
+                />
+            </div>  
 
             <Fornecedores />
         </>

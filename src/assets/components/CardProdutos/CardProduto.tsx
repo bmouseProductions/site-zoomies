@@ -14,11 +14,11 @@ export default function CardProduto( {link, image, name, styleExtra}:CardProps )
     return (
         <div className={style + styleExtra}>
             <Link to={link}>
-                <div className='py-5 bg-[#0089cb] rounded-3xl'>
+                <div className='py-5 border-2  border-[#0089cb] rounded-3xl'>
                     <img src={image} alt="" className='xl:w-[300px]  2xl:w-[400px] mx-auto' />
                 </div>
                 
-                <h1 className='my-2 text-2xl font-bold text-center text-[#04083a]  min-h-[72px] '>{name}</h1>
+                <h2 className='my-2 text-2xl font-bold text-center text-[#04083a]  min-h-[72px] '>{name}</h2>
             </Link>
         </div>
     )

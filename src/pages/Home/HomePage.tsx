@@ -88,16 +88,13 @@ export default function HomePage(){
                             </p>
                         </div>
 
-                        <div className='w-full max-w-3xl ' >
+                        <div className='w-full max-w-3xl flex justify-end' >
                             <img src={banner} alt="" className=''/>
                         </div>
                         
                     </div>
                 </div>
             </section>
-            
-            
-            
 
             <Fornecedores />
 
@@ -109,9 +106,12 @@ export default function HomePage(){
                         animationData={paw}
                         className='w-[150px] mx-auto rotate-45'
                     />
-                    <h1 className='text-4xl lg:text-5xl  text-center'>
-                        Conheça nossos produtos
-                    </h1>
+                    <div className='w-full h-[90px] bg-faixa flex justify-center items-center'>
+                        <h1 className='text-4xl md:text-5xl  text-center text-[#233466] '>
+                            Conheça nossos produtos
+                        </h1>
+                    </div>
+                    
                 </div>
                  
             </section>
@@ -136,7 +136,7 @@ export default function HomePage(){
             {/*SECTION BIFINHOS*/}
             <section className='max-w-[1276px] mx-auto px-5 pt-20 pb-10 flex gap-10 flex-col lg:flex-row'>
                 <div className='lg:w-2/3 flex flex-col gap-5'>
-                    <h1 className='text-4xl lg:text-5xl  text-black'>Linha de <br className='hidden md:block'/>
+                    <h1 className='text-4xl md:text-5xl  lg:text-7xl  text-[#233466] '>Linha de <br className='hidden lg:block'/>
                         Bifinhos
                     </h1>
                     <p className='text-[#1E1E1E] text-lg'>Os Bifinhos, em diversos sabores e preparados para vários portes e idades, são petiscos que além de saborosos, beneficiam a saúde de seu pet. Ricos em proteínas, esses petiscos são ótimos para manter os músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, o que previne problemas bucais. E, para um bom treinamento do seus pets, os Bifinhos são ótimas recompensas, oferecem estímulos sensoriais e fortalecem o vínculo, promovendo confiança entre você e seu animal de estimação.</p>
@@ -148,7 +148,7 @@ export default function HomePage(){
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] 2xl:w-[500px] bg-[#f5a518]  rounded' src={bifinhos} alt="" />
+                <img className='lg:w-[400px] 2xl:w-[500px] bg-[#f5a518]  rounded-2xl' src={bifinhos} alt="" />
             </section>
             <SliderProdutos 
                 slideContent={slideBifinhos}
@@ -156,19 +156,19 @@ export default function HomePage(){
             />
 
             {/*SECTION NATURAIS*/}
-                <section className='max-w-[1276px] mt-10 mx-auto px-5 pt-12 flex gap-10 flex-col-reverse lg:flex-row-reverse'>
-                <div className='lg:w-2/3 flex flex-col lg:items-end gap-5'>
-                    <h1 className='text-4xl lg:text-5xl  text-black'>Linha de Naturais</h1>
+            <section className='max-w-[1276px] mt-10 mx-auto px-5 pt-12 flex gap-10 flex-col-reverse lg:flex-row-reverse'>
+                <div className='lg:w-2/3 flex flex-col lg:items-start gap-5'>
+                    <h1 className='text-4xl md:text-5xl lg:text-7xl  text-[#233466] '>Linha de <br className='hidden lg:block' /> Naturais</h1>
                     <p className='text-[#1E1E1E] text-lg'>O estresse pode causar diversos problemas de saúde nos cães, por isso criamos uma linha de produtos especiais que ajudam os animais a controlar a sua ansiedade e irritação. Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia a dia, unindo bem-estar e lazer, fazendo com que ele se sinta verdadeiramente feliz e saudável.</p>
-                    <div className='flex justify-center lg:justify-start'>
+                    <div className='w-full flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
-                            page='/produtos/catalogo'
+                            page='/produtos'
                             icon= {''}
                         />
                     </div>
                 </div>
-                <img className='lg:w-[400px] 2xl:w-[500px] bg-[#f5a518] rounded' src={naturais} alt="" />
+                <img className='lg:w-[400px] 2xl:w-[500px] bg-[#f5a518] rounded-2xl' src={naturais} alt="" />
             </section>
             <SliderProdutos 
                 slideContent={slideNaturais}
@@ -185,7 +185,12 @@ export default function HomePage(){
                         animationData={paw}
                         className='w-[150px] mx-auto rotate-45'
                     />
-                    <h1 className='text-4xl lg:text-5xl text-center '>Assista os vídeos e conheça melhor nossos produtos</h1>
+                    <div className='w-full h-[90px] bg-faixa flex justify-center items-center'>
+                        <h1 className='text-4xl md:text-5xl text-center text-[#233466] '>
+                            Assista os vídeos e conheça <br className='hidden lg:block' /> melhor nossos produtos
+                        </h1>
+                    </div>
+                   
                 </div>
                 <div className='w-full xl:px-28 flex mx-auto' id='slick-videos'>
                     <SliderVideos
@@ -206,22 +211,4 @@ export default function HomePage(){
             
         </>
     )
-}
-
-/*
-                <div>
-                    <div className='hidden sm:block'>
-                        <SliderBanner 
-                            slideContent={slideContentDesk}
-                            slideCount={slideCountDesk}
-                        />
-                    </div>
-
-                    <div className='sm:hidden'>
-                        <SliderBanner 
-                            slideContent={slideContentMobile}
-                            slideCount={slideCountMobile}
-                        />
-                    </div>
-                </div>
-*/              
+}             

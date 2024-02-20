@@ -49,17 +49,25 @@ export default function ProdutosPage(){
                 </div>
             </section>
 
-            <section className="max-w-[1276px] mx-auto px-5 mb-24 text-blackbg-home">
-                <div className='mb-10 '>
+            <section className="max-w-[1276px] mx-auto px-5 text-blackbg-home">
+                <div className='mb-14 lg:mb-20 '>
                     <Lottie
                         play
                         loop
                         animationData={paw}
                         className='w-[150px] mx-auto rotate-45'
                     />
-                    <h1 className='text-center text-5xl xl:text-6xl text-black '>
-                        Produtos
-                    </h1>
+                    <div className='px-5 flex flex-col md:flex-row gap-5 md:gap-8 lg:gap-14 xl:gap-28'>
+                        <h1 className='text-start text-7xl xl:text-6xl text-[#0089cb] '>
+                            Nossos Produtos
+                        </h1>
+                        <div className='flex items-center'>
+                            <p>
+                                A missão da Zoomies é revolucionar o mercado pet com sua inovação, qualidade e atenção aos detalhes. Nós acreditamos que os pets merecem o melhor, por isso, selecionamos os ingredientes com muito cuidado e criamos receitas saborosas e saudáveis para eles.
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div className='w-full mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 md:gap-14 '>

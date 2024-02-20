@@ -61,14 +61,6 @@ h1{
   display: none;
 }
 
-.text-gradient {
-  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#deebfa .89%,#bed5f5 17.23%,#9db7f0 42.04%,#7d99eb 55.12%,#5c68e6 71.54%,#3345cf 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .menuNavigation a.active {
   color: #f5a518;
 }
@@ -93,5 +85,20 @@ h1{
 
 .bg-faixa{
   background-image: url(./assets/images/faixa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-faixa2{
+  background-image: url(./assets/images/faixa.png);
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.bg-faixa-azul{
+  background-image: url(./assets/images/faixa-azul.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
