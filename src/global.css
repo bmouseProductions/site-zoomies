@@ -85,7 +85,7 @@ h1{
 
 .bg-faixa{
   background-image: url(./assets/images/faixa.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
