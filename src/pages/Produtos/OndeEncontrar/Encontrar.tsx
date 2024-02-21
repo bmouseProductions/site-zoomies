@@ -290,43 +290,51 @@ export default function Encontrar(){
                     </div>
                     <div className='w-full'>
                         <p>
-                        Aqui você poderá encontrar os pontos de vendas Zoomies que estão distribuídos pelo Brasil! Selecione os campos para encontrar o ponto mais próximo de você:
+                            Aqui você poderá encontrar os pontos de vendas Zoomies que estão distribuídos pelo Brasil! Selecione os campos para encontrar o ponto mais próximo de você:
                         </p>
                     </div>
 
                     <div className='w-full flex flex-col gap-5 px-5'>
-                        {/* Select para escolher o estado */}
-                        <select 
-                            value={estadoSelecionado} 
-                            onChange={handleEstadoChange}
-                            className='p-1 bg-gray-300 rounded'
-                        >
-                            <option value="" disabled>
-                            Selecione um estado:
-                            </option>
-                            {locais.map((local) => (
-                            <option key={local.estado} value={local.estado}>
-                                {local.estado}
-                            </option>
-                            ))}
-                        </select>
+                        <div>
 
-                        {/* Select para escolher a cidade com base no estado selecionado */}
-                        <select 
-                            value={cidadeSelecionada} 
-                            onChange={handleCidadeChange} 
-                            disabled={!estadoSelecionado}
-                            className='p-1 bg-gray-300 rounded'
-                        >
-                            <option value="" disabled>
-                            Selecione uma cidade:
-                            </option>
-                            {cidadesDoEstadoSelecionado.map((cidade) => (
-                            <option key={cidade} value={cidade}>
-                                {cidade}
-                            </option>
-                            ))}
-                        </select>
+                        
+                        <label htmlFor="estado">Selecione um estado:</label>
+                            {/* Select para escolher o estado */}
+                            <select 
+                                value={estadoSelecionado} 
+                                onChange={handleEstadoChange}
+                                className='p-1 bg-gray-300 rounded'
+                            >
+                                <option value="" disabled>
+                                Selecione um estado:
+                                </option>
+                                {locais.map((local) => (
+                                <option key={local.estado} value={local.estado}>
+                                    {local.estado}
+                                </option>
+                                ))}
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label htmlFor="cidade">Selecione uma cidade:</label>
+                            {/* Select para escolher a cidade com base no estado selecionado */}
+                            <select 
+                                value={cidadeSelecionada} 
+                                onChange={handleCidadeChange} 
+                                disabled={!estadoSelecionado}
+                                className='p-1 bg-gray-300 rounded'
+                            >
+                                <option value="" disabled>
+                                Selecione uma cidade:
+                                </option>
+                                {cidadesDoEstadoSelecionado.map((cidade) => (
+                                <option key={cidade} value={cidade}>
+                                    {cidade}
+                                </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                 </div>
 

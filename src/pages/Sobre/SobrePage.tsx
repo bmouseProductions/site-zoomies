@@ -58,10 +58,16 @@ export default function SobrePage(){
                 </div>
             </section>
 
-            <div className='mx-auto bg-faixa w-full md:w-[550px] lg:w-[800px] p-2 mt-20 mb-5 lg:mb-20'>
-                <h1 className='text-5xl lg:text-7xl  flex items-center justify-center text-white'>
-                    Qual a nossa missão?
+            <div className='flex flex-col items-center md:justify-center md:flex-row h-full p-2 mt-20 mb-5 lg:mb-20'>
+                <h1 className='relative text-5xl md:text-5xl text-center text-[#233466] ml-[-50]'>
+                    Qual a nossa 
                 </h1>
+                <div className='w-[300px] h-[90px] py-2 flex items-center justify-center bg-faixa-azul '>
+                    <h1 className='text-5xl  text-center text-white '>
+                        missão?
+                    </h1>
+                </div>
+                
             </div>
 
             <section className='max-w-[1276px] mx-auto max-h-[650px] md:max-h-[800px] lg:max-h-[400px] px-5 pb-10 flex gap-10 flex-col lg:flex-row '>
