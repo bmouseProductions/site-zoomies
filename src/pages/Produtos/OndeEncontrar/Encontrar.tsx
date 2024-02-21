@@ -259,10 +259,10 @@ export default function Encontrar(){
                     <div className='max-w-[1276px] lg:px-5 mx-auto w-full flex flex-col-reverse lg:flex-row-reverse justify-center items-center'>
                         <div className='max-w-[500px] px-5 lg:px-0 pb-5'>
                             <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold text-center lg:text-start text-white '>
-                                Onde Encontrar
+                                Onde Encontrar?
                             </h1>
                             <p className="text-lg text-[#fff] text-center lg:text-start mt-7">
-                                Saiba onde encontrar os produtos da marca mais deliciosa do Brasi!!
+                                Saiba onde encontrar os produtos da marca mais deliciosa do Brasil!
                             </p>
 
                             {/*<Link to="/produtos" className='w-auto underline text-xl text-white font-semibold'>
@@ -283,14 +283,14 @@ export default function Encontrar(){
 
             <section className='mt-10 max-w-[1276px] mx-auto px-5 flex flex-col lg:flex-row gap-10'>
                 <div className='flex flex-col gap-7 items-center max-w-[600px] '>
-                    <div className='bg-faixa w-full md:w-[500px] h-[60px]'>
-                        <h1 className='text-5xl  flex items-center justify-center text-white'>
-                            Encontre aqui
+                    <div className='bg-faixa w-full flex items-center justify-center h-[70px]'>
+                        <h1 className='text-5xl lg:text-6xl flex items-center justify-center text-white'>
+                            Encontre aqui:
                         </h1>
                     </div>
                     <div className='w-full'>
-                        <p>Aqui voce poderá encontrar os pontos de vendas Zoomies ques estão distribuídos ao redor do brasil,
-                            selecione os campos para encontrar o ponto mais próximo de você.
+                        <p>
+                        Aqui você poderá encontrar os pontos de vendas Zoomies que estão distribuídos pelo Brasil! Selecione os campos para encontrar o ponto mais próximo de você:
                         </p>
                     </div>
 
@@ -331,7 +331,7 @@ export default function Encontrar(){
                 </div>
 
                 
-                <div className='mx-auto w-full h-[300px] md:h-[400px] lg:h-[300px] bg-sky-600 '>
+                <div className='mx-auto w-full h-[300px] md:h-[400px] lg:h-[300px]  '>
                     <iframe 
                         src={localizacaoUrl}
                         className='w-full h-full'

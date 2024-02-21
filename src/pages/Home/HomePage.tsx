@@ -81,10 +81,10 @@ export default function HomePage(){
                     <div className='w-full flex flex-col md:flex-row-reverse justify-end bannerHome'>
                         <div className='max-w-[600px] px-5 flex flex-col justify-center'>
                             <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold text-center md:text-start text-white '>
-                                A revolução do mercado pet brasileiro!
+                                Nós somos a revolução do mercado pet brasileiro!
                             </h1>
                             <p className="mb-7 text-lg text-[#ffffff] text-center lg:text-start mt-7">
-                                Com a melhor fórmula e ingredientes selecionados, oferecemos petiscos com qualidade, sabor, saúde e diversão para os nossos amigos de quatro patas.
+                            Com a melhor fórmula e ingredientes selecionados, oferecemos petiscos com qualidade super premium, sabor, nutrição e diversão para os nossos amigos de quatro patas.
                             </p>
                         </div>
 
@@ -106,10 +106,15 @@ export default function HomePage(){
                         animationData={paw}
                         className='w-[150px] mx-auto rotate-45'
                     />
-                    <div className='w-full h-[90px] bg-faixa flex justify-center items-center'>
-                        <h1 className='text-4xl md:text-5xl  text-center text-[#233466] '>
-                            Conheça nossos produtos
+                    <div className='flex flex-col items-center lg:flex-row mb-5 h-full'>
+                        <h1 className='text-4xl md:text-5xl text-center text-[#233466] '>
+                            Conheça nossos
                         </h1>
+                        <div className='w-[300px] h-[90px] py-2 flex items-center justify-center bg-faixa-azul '>
+                            <h1 className='text-4xl md:text-5xl  text-center text-white '>
+                                produtos
+                            </h1>
+                        </div>
                     </div>
                     
                 </div>
@@ -139,7 +144,7 @@ export default function HomePage(){
                     <h1 className='text-4xl md:text-5xl  lg:text-7xl  text-[#233466] '>Linha de <br className='hidden lg:block'/>
                         Bifinhos
                     </h1>
-                    <p className='text-[#1E1E1E] text-lg'>Os Bifinhos, em diversos sabores e preparados para vários portes e idades, são petiscos que além de saborosos, beneficiam a saúde de seu pet. Ricos em proteínas, esses petiscos são ótimos para manter os músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, o que previne problemas bucais. E, para um bom treinamento do seus pets, os Bifinhos são ótimas recompensas, oferecem estímulos sensoriais e fortalecem o vínculo, promovendo confiança entre você e seu animal de estimação.</p>
+                    <p className='text-[#1E1E1E] text-lg'>Os bifinhos são petiscos que, além de saborosos, beneficiam a saúde de seu pet. Produzidos pela Zoomies em diversos sabores e para diferentes idades, eles são ricos em proteínas, mantendo músculos e ossos saudáveis. Além disso, auxiliam na higiene dental, o que previne problemas bucais. E, para um bom treinamento dos seus pets, os bifinhos são ótimas recompensas, oferecem estímulos sensoriais e fortalecem o vínculo, promovendo confiança entre você e seu animal de estimação.</p>
                     <div className='flex justify-center lg:justify-start'>
                         <Botao 
                             children="Veja todos o produtos"
@@ -176,7 +181,7 @@ export default function HomePage(){
             />
             
             {/*SECTION VIDEOS*/}
-            <section className='max-w-[1276px] mx-auto px-5 pt-20  flex flex-col gap-7'>
+            <section className='max-w-[1276px] mx-auto px-5 pt-20  flex flex-col items-center gap-7'>
                 
                 <div className=''>
                     <Lottie
@@ -185,10 +190,18 @@ export default function HomePage(){
                         animationData={paw}
                         className='w-[150px] mx-auto rotate-45'
                     />
-                    <div className='w-full h-[90px] bg-faixa flex justify-center items-center'>
-                        <h1 className='text-4xl md:text-5xl text-center text-[#233466] '>
-                            Assista os vídeos e conheça <br className='hidden lg:block' /> melhor nossos produtos
-                        </h1>
+                    <div className='relative w-full mx-auto flex lg:items-center lg:flex-row mb-5 '>
+                        
+                        <div className=' w-[350px] md:w-[420px] py-2 flex items-center justify-center lg:justify-center bg-faixa-azul bg-right md:bg-end'>
+                            <h1 className=' text-4xl md:text-5xl lg:text-center text-[#233466] '>
+                                Conheça 
+                            </h1>
+                            
+                            <h1 className='ml-2 text-4xl md:text-5xl text-center text-white '>
+                                melhor
+                            </h1>
+                        </div>
+                        
                     </div>
                    
                 </div>

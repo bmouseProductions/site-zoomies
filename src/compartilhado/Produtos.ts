@@ -11,6 +11,7 @@ import femurSuino from '../assets/images/produtos/femurSuino.webp'
 import mixRecortes from '../assets/images/produtos/mixRecortes.webp'
 import ossoCabeca from '../assets/images/produtos/ossoCabeca.webp'
 import costela from '../assets/images/produtos/costela.webp'
+import esofago from '../assets/images/produtos/esofago.webp'
 
 export const description = [
     {
@@ -179,8 +180,19 @@ export const naturais = [
     },
     
     {
-        nome: 'Mix de Recorte',
+        nome: 'Mix de Recortes',
         imagem: mixRecortes,
+        descricao: 'O estresse pode causar diversos problemas de saúde nos cães, por isso criamos uma \
+            linha de produtos especiais que ajudam os animais a controlar a sua ansiedade e irritação. \
+            Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia \
+            a dia, unindo bem-estar e lazer, fazendo com que ele se sinta verdadeiramente feliz e saudável.',
+        composicao: 'Recortes desidratados de bovinos. No mix pode conter recortes de traqueia, esôfago e vergalho. Este produto não substitui um alimento completo. Uso proibido na alimentação de ruminantes. Distribuir conforme indicação de uso, como forma de premiação, distração e brincadeira.',
+        linha: 'naturais',
+    },
+    
+    {
+        nome: 'Esôfago',
+        imagem: esofago,
         descricao: 'O estresse pode causar diversos problemas de saúde nos cães, por isso criamos uma \
             linha de produtos especiais que ajudam os animais a controlar a sua ansiedade e irritação. \
             Essa linha de naturais antiestresse veio para ajudar o seu cãozinho a ter mais tranquilidade no dia \

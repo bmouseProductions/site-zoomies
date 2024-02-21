@@ -13,8 +13,8 @@ import {
 } from "@material-tailwind/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { ShoppingBagIcon, MapIcon} from "@heroicons/react/24/solid";
-import { faBuilding, faCartShopping, faHandshake, faHome, faNewspaper, faPaw } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faHandshake, faHome, faPaw, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
 {/* COLLAPSE MENU HOVER */}
@@ -140,9 +140,27 @@ export function MegaMenuWithHover() {
     }, [isSticky]);
 
     
-    /*COLLAPSE MENU MOBILE*/
+    /*COLLAPSE MENU MOBILE PRODUTOS*/
     const [open, setOpen] = React.useState(false);
-    const toggleOpen = () => setOpen((cur) => !cur);
+    const toggleOpen = () => {
+      setOpen((cur) => !cur);
+      if (open2 === true){setOpen2(false)}
+    }
+
+    /*COLLAPSE MENU MOBILE OUTROS*/
+    const [open2, setOpen2] = React.useState(false);
+    const toggleOpen2 = () => {
+      setOpen2((cur) => !cur)
+      if (open === true){setOpen(false)}
+    };
+
+
+    function closeCollapse(){
+      if (open === true || open2 === true){
+        setOpen(false)
+        setOpen2(false)
+      }
+    }
  
     return (
         <>
@@ -181,28 +199,38 @@ export function MegaMenuWithHover() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                {/* Outros */}
+                <Collapse  open={open2}>
+                    <Card className={ open2 ? " mx-auto w-6/12 bg-blue-600 rounded": 'hidden'}>
+                        <CardBody>
+                          <NavLink  to="/sobre" className="py-1 flex flex-col items-center text-sm md:text-xl " onClick={toggleOpen2}>
+                            Sobre
+                          </NavLink >
+                          <hr />
+                          <a  href="" target="_blank" className="py-1 flex flex-col items-center text-sm md:text-xl " onClick={toggleOpen2}>
+                            Blog
+                          </a >
+                        </CardBody>
+                    </Card>
+                </Collapse>
 
                 <nav className=" lg:hidden w-full  py-5 px-2 flex justify-around text-black bg-[#fff] menhu">
-                    <NavLink  to="/" className="flex flex-col items-center text-sm md:text-xl" >
+                    <NavLink onClick={closeCollapse} to="/" className="flex flex-col items-center text-sm md:text-xl" >
                         <FontAwesomeIcon icon={faHome} className="text-black text-lg" />
                         Home
                     </NavLink >
-                    <NavLink  to="/sobre" className="flex flex-col items-center text-sm md:text-xl" >
-                        <FontAwesomeIcon icon={faBuilding} className="text-black text-lg" />
-                        Sobre
-                    </NavLink >
                     <a  onClick={toggleOpen} className="flex flex-col items-center text-sm md:text-xl" >
-                        <FontAwesomeIcon icon={faPaw} className="text-black text-lg" />
-                        Produtos
+                      <FontAwesomeIcon icon={faPaw} className="text-black text-lg" />
+                      Produtos
                     </a >
-                    <NavLink  to="https://lojazoomies.com/revendedor/" className="flex flex-col items-center text-sm md:text-xl" >
-                        <FontAwesomeIcon icon={faHandshake} className="text-black text-lg " />
-                        Revendedor
+                    <NavLink onClick={closeCollapse} to="https://lojazoomies.com/revendedor/" className="flex flex-col items-center text-sm md:text-xl" >
+                      <FontAwesomeIcon icon={faHandshake} className="text-black text-lg " />
+                      Revendedor
                     </NavLink >
-                    <NavLink  to="https://lojazoomies.com/zoom/" className="flex flex-col items-center text-sm md:text-xl" >
-                        <FontAwesomeIcon icon={faNewspaper} className="text-black text-lg " />
-                        Blog
-                    </NavLink >
+                    <a  onClick={toggleOpen2} className="flex flex-col items-center text-sm md:text-xl" >
+                      <FontAwesomeIcon icon={faBars} className="text-black text-lg" />
+                      Outros
+                    </a >
                 </nav>
             </header>
         </>

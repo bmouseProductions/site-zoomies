@@ -85,20 +85,14 @@ h1{
 
 .bg-faixa{
   background-image: url(./assets/images/faixa.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.bg-faixa2{
-  background-image: url(./assets/images/faixa.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left;
-}
 
 .bg-faixa-azul{
   background-image: url(./assets/images/faixa-azul.png);
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }

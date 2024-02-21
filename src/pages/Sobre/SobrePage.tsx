@@ -58,9 +58,9 @@ export default function SobrePage(){
                 </div>
             </section>
 
-            <div className='mx-auto bg-faixa w-full md:w-[500px] lg:w-[800px] p-2 mt-20 mb-5 lg:mb-20'>
+            <div className='mx-auto bg-faixa w-full md:w-[550px] lg:w-[800px] p-2 mt-20 mb-5 lg:mb-20'>
                 <h1 className='text-5xl lg:text-7xl  flex items-center justify-center text-white'>
-                    Quem somos?
+                    Qual a nossa missão?
                 </h1>
             </div>
 

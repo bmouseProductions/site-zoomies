@@ -5,6 +5,7 @@ import { AllProducts } from "../../../compartilhado/Produtos";
 import logo from '../../../assets/images/logoColorida.webp'
 import { Link } from "react-router-dom";
 import Fornecedores from "../../../assets/components/fornecedores/Fornecedores";
+import tabela from '../../../assets/images/tabelaConsumo.png'
 
 interface Produto {
     nome: string;
@@ -61,13 +62,14 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                         <Link to='/produtos/catalogo' className="my-10 text-xl font-medium ">Produtos</Link> / {produto.nome}
                     </h1>
 
-                    <div className="flex flex-col lg:flex-row justify-center items-center">
-                        <img className="w-full max-w-lg " src={produto.imagem} alt="" />
+                    <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+                        <img className="w-full max-w-md rounded-2xl" src={produto.imagem} alt="" />
                         <div className="flex flex-col pt-10 ">
                             <h1 className="text-3xl md:text-4xl md:mt-6 mb-2">{produto.nome}</h1>
                             <p className=" ">
                                 {produto.descricao}
                             </p>
+                            <img src={tabela} alt="" className="mt-5 lg:mt-10 w-[300px] " />
                         </div>
                         
                     </div>

@@ -22,8 +22,8 @@ export default function Fornecedores(){
                         <h1 className='text-4xl md:text-5xl text-center text-[#233466] '>
                             Onde encontrar os produtos  
                         </h1>
-                        <div className='w-[300px] h-[90px] py-2 flex items-center justify-center md:block bg-faixa-azul '>
-                            <h1 className='text-4xl md:text-5xl text-center text-white faixa-azul'>
+                        <div className='w-[300px] h-[90px] py-2 flex items-center justify-center  bg-faixa-azul '>
+                            <h1 className='text-4xl md:text-5xl text-center text-white faixa-azul bg-bottom'>
                                 Zoomies? 
                             </h1>
                         </div>
