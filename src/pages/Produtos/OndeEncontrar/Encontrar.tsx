@@ -284,7 +284,7 @@ export default function Encontrar(){
             <section className='mt-10 max-w-[1276px] mx-auto px-5 flex flex-col lg:flex-row gap-10'>
                 <div className='flex flex-col gap-7 items-center max-w-[600px] '>
                     <div className='bg-faixa w-full flex items-center justify-center h-[70px]'>
-                        <h1 className='text-5xl lg:text-6xl flex items-center justify-center text-white'>
+                        <h1 className='text-4xl lg:text-6xl flex items-center justify-center text-white'>
                             Encontre aqui:
                         </h1>
                     </div>
