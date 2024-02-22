@@ -14,7 +14,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { ShoppingBagIcon, MapIcon} from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faHandshake, faHome, faPaw, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faHandshake, faHome, faPaw, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
 {/* COLLAPSE MENU HOVER */}
@@ -172,14 +172,14 @@ export function MegaMenuWithHover() {
                     <div className="hidden lg:block">
                     <NavList />
                     </div>
-                    <a 
+                    {/* <a 
                       href="https://lojazoomies.com/view" 
                       target="_blank"
                       className="flex justify-center items-center gap-3 py-2 px-3 text-xl font-semibold bg-white rounded-lg text-black "
                     >
                         <FontAwesomeIcon icon={faCartShopping} className="text-black text-lg" />
                         Comprar
-                    </a>
+                    </a> */}
                 </div>
             </header>
 
