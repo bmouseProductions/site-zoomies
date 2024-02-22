@@ -34,9 +34,6 @@ h1{
   background-color:#04083ac1;
 }
 
-.banners .slick-prev, .banners .slick-next{
-  display: none !important;
-}
 
 .slick-dots{
   bottom: -40px !important;
@@ -52,10 +49,17 @@ h1{
 }
 
 /* @media (max-width:1024px){} */
-  .slick-prev, .slick-next{
-    display: none !important;
-  }
+.slick-prev, .slick-next{
+  display: none !important;
+}
 
+#slick-videos .slick-prev, #slick-videos .slick-next{
+  display: block !important;
+}
+
+#slick-videos .slick-prev:before, #slick-videos .slick-next:before{
+  color: black;
+}
 
 .hiddenLogo{
   display: none;

@@ -7,7 +7,6 @@ import Lottie from 'react-lottie-player';
 
 import banner from '../../assets/images/banners/bannerSobre.webp'
 import CardProduto from '../../assets/components/cardProdutos/CardProduto';
-import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import SliderProdutos from '../../assets/components/sliders/SliderProdutos';
 
 import logo from '../../assets/images/logoZoomies.webp'
@@ -117,8 +116,6 @@ export default function SobrePage(){
                     icon=''
                 />
             </div>  
-
-            <Fornecedores />
         </>
     )
 }

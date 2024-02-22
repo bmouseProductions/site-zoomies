@@ -4,7 +4,6 @@ import { AllProducts } from "../../../compartilhado/Produtos";
 
 import logo from '../../../assets/images/logoColorida.webp'
 import { Link } from "react-router-dom";
-import Fornecedores from "../../../assets/components/fornecedores/Fornecedores";
 import tabela from '../../../assets/images/tabelaConsumo.png'
 
 interface Produto {
@@ -130,8 +129,6 @@ export default function ProdutoDetail({ produto }: ProductDetailProps){
                     />
                 </div>
             </section>
-
-            <Fornecedores />
         </>
     )
 }

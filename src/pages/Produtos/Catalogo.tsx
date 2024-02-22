@@ -7,7 +7,6 @@ import CardProduto from '../../assets/components/cardProdutos/CardProduto'
 
 import banner from '../../assets/images/banners/BannerProdutos.png'
 import logo from '../../assets/images/logoZoomies.webp'
-import Fornecedores from '../../assets/components/fornecedores/Fornecedores'
 import { Link } from 'react-router-dom'
 
 
@@ -85,7 +84,6 @@ export default function ProdutosPage(){
                 
             </section>
 
-            <Fornecedores />
         </>
     )
 }

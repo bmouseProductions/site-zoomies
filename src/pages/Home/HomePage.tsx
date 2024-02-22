@@ -8,7 +8,6 @@ import { AllProducts } from '../../compartilhado/Produtos'
 import SliderProdutos from '../../assets/components/sliders/SliderProdutos'
 import CardProduto from '../../assets/components/cardProdutos/CardProduto'
 import SliderVideos from '../../assets/components/sliders/SliderVideos'
-import Fornecedores from '../../assets/components/fornecedores/Fornecedores';
 import Botao from '../../assets/components/button/Botao';
 
 import banner from '../../assets/images/banners/BannerHome.webp'
@@ -95,8 +94,6 @@ export default function HomePage(){
                     </div>
                 </div>
             </section>
-
-            <Fornecedores />
 
             <section className='max-w-[1276px] mx-auto px-5 lg:mt-10 '>
                 <div className='lg:pt-14 flex flex-col items-center justify-center '>
@@ -205,7 +202,7 @@ export default function HomePage(){
                     </div>
                    
                 </div>
-                <div className='w-full xl:px-28 flex mx-auto' id='slick-videos'>
+                <div className='w-full px-2 xl:px-28 flex mx-auto' id='slick-videos'>
                     <SliderVideos
                         slideContent={slideVideos}
                         slideCount={slideCountVideos}
